@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SOLVE</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/mathstyle.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <script defer type="text/javascript" src="js/const.js"></script>
+
+    <script>
+        var simsubscreennum = 0;
+        var temp = 0;
+
+
+    </script>
+</head>
+
+<body style="margin:0; font-family:verdana;">
+    <div id="simscreen">
+        <div id="title">
+            <h3>Hydraulic Conductivity-Constant Head Test</h3>
+        </div>
+        <div class="simsubscreen" id="canvas0">
+            <h4 class="incanvas">Objective:</h4>
+            <p class="incanvas" style="font-size:14px;">To determine the hydraulic conductivity how
+                easily water can pass through the rock or the soil.</p>
+            <h4 class="incanvas">Apparatus used:</h4>
+            <p class="incanvas" style="font-size:14px;">Trowel, Test Cylinder, Coarse Sand, Filter Paper</p>
+
+            <img style="position:absolute; left:0px; top:170px;max-width:18%;width:100%;transform: rotateY(180deg);cursor: pointer;"
+                title="Man" src="images/man.png" />
+            <img style="position:absolute; left:169px; top: 102px; height:404px; width: 422px;"
+                src="images/connection3 (1).png" />
+
+        </div>
+        <div class="simsubscreen" id="canvas1" style="visibility: hidden">
+            <!-- <h1 id="ph16"
+                style="position:absolute;left:-30px;top: 171px; color: grey; text-align: center;visibility: hidden;">
+                Constant Head Test calculate the coefficient of Permeability</h1> -->
+            <strong class="incanvas" id="incanvas_1" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_1" style="visibility:hidden;">&nbsp;1&nbsp;</span>
+            <p class="steptext" id="p1" style="visibility:hidden;">&nbsp;Calculation of the cross sectional area of the
+                cylinder: Take the caliper and measure the diameter of the cylinder. From this cross sectional area is
+                getting as
+                section is cylinder.</p>
+
+            <img id="can16-3"
+                style="position:absolute; left:231px; top:138px; height:206px;width:111px;visibility: hidden;"
+                src="images/cylinderempty (1).png" />
+            <img id="can16-1" style="
+                position: absolute;
+                left: 139px;
+                top: 159px;
+                width: 56%;
+                visibility: hidden;
+              " src="images/v1.png" />
+
+            <img id="can16-2" style="
+                position: absolute;
+                left: 339px;
+                top: 158px;
+                width: 13%;
+                visibility: hidden;
+              " src="images/v2.png" />
+
+            <p id="pv1"
+                style="position: absolute;left:217px;top:349px;font-family: verdana;font-size: 14px;visibility: hidden;">
+                Diameter=13.79cm<sup>2</sup></p>
+            <!-- <p id="can16-4"
+                style="position: absolute; left: 230px; top: 376px;  text-align: center;visibility: hidden;font-family: verdana;font-size: 12px;">
+                <span class="frac1">Area=<span
+                        class="frac"><sup>(13.78cm)<sup>2</sup>&pi;</sup></sub><span>&frasl;</span><sub>4
+                        </sub></span>
+                </h1> -->
+            <p id="ivi"
+                style="position:absolute; font-family:verdana; font-size:14px; margin-left:198px; top:386px; visibility:hidden;">
+                <span class="frac1">Area=<span
+                        class="frac"><sup>d<sup>2</sup>&pi;</sup></sub><span>&frasl;</span><sub>4</sub></span>=
+                    <input type="text" id="result"
+                        style="border:none; border-bottom:1px solid; width:55px; font-family:verdana; font-size:12px; text-align:center;">
+                    cm<sup>2</sup>/s
+                </span>
+            </p>
+            <button id="buttonVer" style="position: absolute;left: 448px;top: 407px; visibility: hidden;"
+                onclick="checkingInputs()">CHECK
+            </button>
+            <button id="resbutton" style="position: absolute; left: 522px;top: 407px;visibility: hidden; "
+                onclick="gettingResult2()" disabled>RESULT</button>
+
+            <!-- <p id="ivi"
+                style="position:absolute; font-family:verdana;font-size:14px;margin-left:199px; top:386px; visibility:hidden;">
+                <span class="frac1">Area=<span
+                        class="frac"><sup>(13.78cm)<sup>2</sup>&pi;</sup></sub><span>&frasl;</span><sub>4
+                        </sub></span>=
+                    <input id="result" type="text"
+                        style="border:none;border-bottom: 1px solid;width:55px;font-family:verdana;font-size:12px;text-align:center;"
+                        autocomplete="off" oninput="checkInputValid(this)"><span id="rightAnss"
+                        class="resultStyles"></span><input id="check" type="button" value="CHECK"
+                        style="cursor:pointer;margin-left: 5px;" onclick="checkResults();"><span id="alertId2">Please
+                        Enter Value to proceed</span>
+                </span>
+            </p> -->
+
+
+            <!-- <p id="ivi"
+                style="position:absolute; font-family:verdana;font-size:14px;margin-left:200px; top:406px; visibility:hidden;">
+                <span class="frac1">Area=<span
+                        class="frac"><sup>(13.78cm)<sup>2</sup>&pi;</sup></sub><span>&frasl;</span><sub>4
+                        </sub></span>=
+
+                    <input id="result" type="text"
+                        style="border:none;border-bottom: 2px solid;width:55px;font-family:verdana;font-size:12px;text-align:left;outline: none;"> -->
+            <!-- <span id="rightAns" class="resultStyle"></span>
+                    <input id="chk" type="button" value="CHECK" style="position: absolute;left: 340px;top: 277px; visibility: hidden;cursor:pointer;margin-left: 10px;"
+                        onclick="checkInputs();">
+                    <span id="alertId">Please Enter Value to proceed</span> -->
+
+            <!-- <input id="res" type="text"
+                        style="border:none;border-bottom: 2px solid;width:55px;font-family:verdana;font-size:12px;text-align:left;outline: none;"
+                        autocomplete="off" oninput="checkInputValid(this)">
+                        <span id="rightAns"
+                        class="resultStyle"></span><input id="chk" type="button" value="CHECK"
+                        style="cursor:pointer;margin-left: 10px;" onclick="checkResults();"><span id="alertId">Please
+                        Enter Value to proceed</span> -->
+            <!-- </span>
+            </p> -->
+            <button id="btn2" style="position: absolute;left: 431px;top: 428px; visibility: hidden;"
+                onclick="checkInputs()">CHECK
+            </button>
+            <button id="resbtn2" style="position: absolute; left: 508px;top: 429px;visibility: hidden; "
+                onclick="getResult2()" disabled>RESULT</button>
+            <span id="alertId2" class="alertmsg" style="position:absolute; left: 150px;top: 281px;color: red;font-family: verdana;
+                    font-size: 12px;">Please Enter Value to proceed</span>
+
+            <!-- <span id="resultDisplay"></span> -->
+
+
+
+
+        </div>
+
+
+
+
+        <div class="simsubscreen" id="canvas2" style="visibility:hidden;">
+            <h1 id="ph1"
+                style="position:absolute;left:116px;top: 171px; color: grey; text-align: center;visibility: hidden;">
+                Prepare the Soil Sample</h1>
+            <strong class="incanvas" id="incanvas_2" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_2" style="visibility:hidden;">&nbsp;2&nbsp;</span>
+            <p class="steptext" id="p1s" style="visibility:hidden;">&nbsp;Take one killogram of coarse soil sample and
+                place it in conatiner and measure the sample.</p>
+            <img id="can2-1" style="position:absolute; left:175px; top:272px;visibility:hidden;cursor:pointer;"
+                title="Weighing Machine" src="images/wm1.png" />
+            <img id="can2-4" style="position:absolute; left:235px; top:391px;cursor:pointer;visibility:hidden;"
+                src="images/on.png" />
+            <img id="can2-2" style="position:absolute; left:350px; top:84px; width:212px; visibility:hidden;"
+                src="images/bowl_hand.png" />
+            <img id="can2-3" style="position:absolute; left:200px; top:235px;  visibility:hidden;"
+                src="images/bowl.png" />
+            <img id="can2-5" style="position:absolute; left:404px; top:114px; width:184px; visibility:hidden;"
+                src="images/platenew.png" />
+            <p id="p1-1" style="position:absolute; left:285px; top:352px;font-size:12px;font-family: verdana;"></p>
+            <p id="p1-2"
+                style="position:absolute; left:20px; top:470px; font-size:12px; visibility: hidden;font-family: verdana;">
+                Mass of
+                the container and initial volume of the soil (g>) = _________ </p>
+            <p id="p1_1" style="position:absolute; left:278px; top:375px;"></p>
+            <img id="1-3" style="position:absolute; left:339px; top:391px;cursor:pointer;visibility:hidden;"
+                src="images/tare.png" />
+        </div>
+        <div class="simsubscreen" id="canvas3" style="visibility:hidden;">
+            <strong class="incanvas">STEP</strong>
+            <span class="circlebg">&nbsp;3&nbsp;</span>
+            <p class="steptext">&nbsp;Put the screen at the bottom of the test cylinder and place the soil sample. Soil
+                sample should be arranged in layers and each layer is levelled by using hammer.
+            </p>
+
+
+            <img id="can3-14" style="position:absolute; left:230px; top:170px; width:129px;visibility:hidden;"
+                src="images/cylinderfull (4).png" />
+            <img id="can3-1" style="position:absolute; left:230px; top:170px; width:129px;visibility:hidden;"
+                src="images/cylinderempty (3).png" />
+            <img id="can3-2"
+                style="position:absolute; left:528px; top:79px; height:58px;width:117px;visibility: hidden;transform: rotateX(109deg);"
+                src="images/filter_paper.png" />
+            <img id="can3-71a"
+                style="position:absolute; left:231px; top:189px; width:128px;visibility: hidden;height:250px "
+                src="images/unevencylinder1.png" />
+            <img id="can3-71b"
+                style="position:absolute; left:231px; top:192px; width:128px;visibility: hidden;height:250px "
+                src="images/unevencylinder2.png" />
+            <img id="can3-71c"
+                style="position:absolute; left:231px; top:159px; width:128px;visibility: hidden;height:291px "
+                src="images/unevencylinder3.png" />
+
+            <img id="can3-a" style="position:absolute; left:263px; top:100px; width:80px;visibility:hidden;"
+                src="images/hammer_rod.png" />
+            <img id="can3-b" style="position:absolute; left:263px; top:49px; width:80px;visibility:hidden;"
+                src="images/hammer_rod.png" />
+            <img id="can3-c" style="position:absolute; left:263px; top:49px; width:80px;visibility:hidden;"
+                src="images/hammer_rod.png" />
+
+
+            <img id="can3-11" style="position:absolute; left:245px; top:175px; width:101px;visibility: hidden; "
+                src="images/semicircle (2).png" />
+
+            <img id="can3-2"
+                style="position:absolute; left:528px; top:96px; height:45px;width:117px;visibility: hidden;"
+                src="images/filter_paper.png" />
+
+            <img id="can3-3"
+                style="position:absolute; left:250px; top:120px; height:108px;width:152px;visibility: hidden;"
+                src="images/hand_plainlid.png" />
+            <img id="can3-4"
+                style="position:absolute; left:262px; top:92px; height:155px;width:154px;visibility: hidden;"
+                src="images/tilthand_plainlid.png" />
+            <img id="can3-5"
+                style="position:absolute; left:244px; top:267px; height:42px;width:102px;visibility: hidden;"
+                src="images/filter_paper.png" />
+            <img id="can3-6"
+                style="position:absolute; left:251px; top:364px; height:62px;width:87px;visibility: hidden;cursor:pointer;"
+                title="screen" src="images/filter_paper.png" />
+
+
+
+
+            <!--sand-->
+            <img id="can3-71" style="position:absolute; left:478px; top:382px; width:101px;visibility: hidden; "
+                src="images/sand.png" />
+
+
+
+
+            <img id="can3-71a" style="position:absolute; left:478px; top:382px; width:101px;visibility: hidden; "
+                src="images/falling.jpg" />
+            <img id="can3-711a"
+                style="position:absolute; left:252px; top:353px; width:83px;visibility: hidden;height:46px "
+                src="images/cylinder1.png" />
+            <img id="can3-711b"
+                style="position:absolute; left:253px; top:269px; width:83px;visibility: hidden;height:130px "
+                src="images/cylinder2.png" />
+            <img id="can3-72" style="position:absolute; left:557px; top:386px; width:101px;visibility: hidden; "
+                src="images/sand.png" />
+            <img id="can3-73" style="position:absolute; left:557px; top:376px; width:101px;visibility: hidden; "
+                src="images/sand.png" />
+            <img id="can3-74" style="position:absolute; left:547px; top:376px; width:101px;visibility: hidden; "
+                src="images/sand.png" />
+            <img id="can3-75" style="position:absolute; left:504px; top:371px; width:101px;visibility: hidden; "
+                src="images/sand.png" />
+            <img id="can3-7" style="position:absolute; left:472px; top:364px; width:200px;visibility: hidden; "
+                src="images/plate.png" />
+
+
+            <img id="can3-8"
+                style="position:absolute; left:528px; top:96px; height:52px;width:142px;visibility: hidden;"
+                src="images/trowel_empty.png" />
+            <img id="can3-8a"
+                style="position:absolute; left:528px; top:96px; height:52px;width:142px;visibility: hidden;"
+                src="images/trowel_empty.png" />
+            <img id="can3-8b"
+                style="position:absolute; left:528px; top:96px; height:52px;width:142px;visibility: hidden;"
+                src="images/trowel_empty.png" />
+            <img id="can3-9"
+                style="position:absolute; left:528px; top: 332px; height:52px;width:142px;visibility: hidden;"
+                src="images/trowelfull.png" />
+            <img id="can3-9d"
+                style="position:absolute; left:528px; top: 332px; height:52px;width:142px;visibility: hidden;"
+                src="images/trowelfull.png" />
+            <img id="can3-9b"
+                style="position:absolute; left:528px; top: 332px; height:52px;width:142px;visibility: hidden;"
+                src="images/trowelfull.png" />
+            <img id="can3-9a"
+                style="position:absolute; left:210px; top: 43px; height:178px;width: 282px;visibility: hidden;  "
+                src="images/fallingsand.png" />
+            <img id="can3-9c"
+                style="position:absolute; left:210px; top: 43px; height:178px;width: 282px;visibility: hidden;  "
+                src="images/fallingsand.png" />
+            <img id="can3-9e"
+                style="position:absolute; left:210px; top: 43px; height:178px;width: 282px;visibility: hidden;  "
+                src="images/fallingsand.png" />
+            <img id="can10"
+                style="position:absolute; left:499px; top: 286px; height:302px;width:222px;visibility: hidden;"
+                src="images/image (1) (1).png" />
+            <img id="can10a"
+                style="position:absolute; left:499px; top: 286px; height:302px;width:222px;visibility: hidden;"
+                src="images/image (1) (1).png" />
+            <img id="can10b"
+                style="position:absolute; left:499px; top: 286px; height:302px;width:222px;visibility: hidden;"
+                src="images/image (1) (1).png" />
+
+            <span id="note_1" style="
+                position: absolute;
+                padding: 10px;
+                border: 1px solid black;
+                background-color: black;
+                border-radius: 5px;
+                left: 433px;
+                top: 92px;
+                width: 258px;
+                display:none;
+                ">
+                <p id="divi2" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
+                    Note:- Fill the cylinder until it is full
+                </p>
+                <input type="button" style="
+                cursor: pointer;
+                border-radius: 5px;
+                margin: 0auto;
+                margin-left: 125px;
+                margin-top: 0px;
+                " id="ok2" value="OK" onclick="okay()" />
+            </span>
+
+
+
+        </div>
+
+        <div class="simsubscreen" id="canvas4" style="visibility:hidden;">
+
+            <strong class="incanvas">STEP</strong>
+            <span class="circlebg">&nbsp;4&nbsp;</span>
+            <p class="steptext">&nbsp;The top of the column should level so that small gaps are filled properly and
+                covered with screen and a separator. Top should be covered with the cap and three screws.
+
+            </p>
+            <img id="can4-1"
+                style="position:absolute; left:230px; top:170px; width:129px;visibility:hidden;cursor: pointer;"
+                title="Test Cylinder" src="images/cy.png" />
+            <img id="can4-2"
+                style="position:absolute; left:537px; top:112px; height:22px;width:84px;visibility: hidden;cursor: pointer;"
+                title="screen" src="images/net lid.png" />
+            <img id="can4-4"
+                style="position:absolute; left:537px; top:90px; height:132px;width:83px;visibility: hidden;transform: rotateX(76deg);cursor: pointer;"
+                title="seperator" src="images/lid.png" />
+            <img id="can4-6"
+                style="position:absolute; left:249px; top:133px; height:90px;width:91px;visibility: hidden;cursor: pointer;"
+                title="End Cap" src="images/fulllid1.png" />
+            <img id="can4-3"
+                style="position:absolute; left:537px; top:116px; height:50px;width:89px;visibility: hidden;cursor: pointer;"
+                title="End Cap" src="images/closing_lid.png" />
+
+            <img id="can4-5"
+                style="position:absolute; left:297px; top:59px; height:253px;width: 156px;visibility: hidden;"
+                src="images/screw+hand (1).png" />
+            <span id="note1" style="
+                position: absolute;
+                padding: 10px;
+                border: 1px solid black;
+                background-color: black;
+                border-radius: 5px;
+                left: 433px;
+                top: 92px;
+                width: 258px;
+                display:none;
+                ">
+                <p id="divi2" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
+                    Note:- Tighten the rest of the screws.
+                </p>
+                <input type="button" style="
+                cursor: pointer;
+                border-radius: 5px;
+                margin: 0auto;
+                margin-left: 125px;
+                margin-top: 0px;
+                " id="ok2" value="OK" onclick="ok()" />
+            </span>
+
+
+
+
+
+        </div>
+        <div class="simsubscreen" id="canvas5" style="visibility:hidden;">
+            <strong class="incanvas">STEP</strong>
+            <span class="circlebg">&nbsp;5&nbsp;</span>
+            <p class="steptext">&nbsp; After that weigh the remaining soil sample.</p>
+            <img id="can5-1" style="position:absolute; left:175px; top:272px;visibility: hidden;cursor: pointer;"
+                title="Weighing Machine" src="images/wm1.png" />
+            <img id="can5-2" style="position:absolute; left:350px; top:84px; width:212px; visibility:hidden;"
+                src="images/bowlreduced_hand.png" />
+            <img id="can5-4" style="position:absolute; left:235px; top:391px;visibility:hidden;cursor:pointer"
+                src="images/on.png" />
+            <img id="can5-3" style="position:absolute; left:200px; top:245px;  visibility:hidden;height:72px"
+                src="images/bowlreduced.png" />
+            <img id="can5-5" style="position:absolute; left:404px; top:114px; width:184px; visibility:hidden;"
+                src="images/platenew.png" />
+            <p id="p5-11" style="position:absolute; left:293px; top:352px;font-size:12px;font-family: verdana;"></p>
+            <p id="p5-22"
+                style="position:absolute; left:20px; top:470px; font-size:12px; visibility: hidden;font-family: verdana;">
+                Mass of
+                the container and remaining soil
+                = _________ </p>
+            <p id="p5_1" style="position:absolute; left:278px; top:375px;"></p>
+            <img id="5-3" style="position:absolute; left:339px; top:391px;cursor:pointer;visibility:hidden;"
+                src="images/tare.png" />
+
+
+        </div>
+        <div class="simsubscreen" id="canvas6" style="visibility:hidden;">
+            <strong class="incanvas">STEP</strong>
+            <span class="circlebg">&nbsp;6&nbsp;</span>
+            <p class="steptext">&nbsp;Connect the intake line of the reservoir to the top of the test cylinder and other
+                two lines to the other two nominals of the test cylinder. This is to measure the pore water pressure
+                of the water at specific points.</p>
+
+            <img id="can6-1"
+                style="position:absolute; left:169px; top: 90px; height:404px; width: 504px;visibility:hidden;"
+                src="images/fullsetup without cylinder (1).png" />
+
+            <img id="can6-17"
+                style="position:absolute; left:169px; top: 90px; height:404px; width: 467px;visibility:hidden;"
+                src="images/connection1.png" />
+            <img id="can6-18"
+                style="position:absolute; left:169px; top: 90px; height:404px; width:467px;visibility:hidden;"
+                src="images/connection2.png" />
+            <img id="can6-19"
+                style="position:absolute; left:169px; top: 90px; height:404px; width:467px;visibility:hidden;"
+                src="images/connection3 (1).png" />
+
+            <img id="can6-2" style="position:absolute; left:321px; top:287px; width:68px;visibility:hidden;height:147px"
+                src="images/cylinder lid close.png" />
+            <img id="can6-22"
+                style="position:absolute; left:324px; top:238px;width:57px;  visibility:hidden;height:76px"
+                src="images/redbox.png" />
+            <img id="can6-23"
+                style="position:absolute; left:278px; top:382px;width:53px;  visibility:hidden;height:35px"
+                src="images/redbox.png" />
+            <img id="can6-24"
+                style="position:absolute; left:349px; top:352px;width:53px;  visibility:hidden;height:35px"
+                src="images/redbox.png" />
+            <img id="can6-3" style="position:absolute; left:75px; top:112px;  visibility:hidden;height:72px"
+                src="images/lefthand.png" />
+            <img id="can6-4"
+                style="position:absolute; left:481px; top:87px;width:208px;  visibility:hidden;height:170px"
+                src="images/bg.png" />
+            <img id="can6-6"
+                style="position:absolute; left:122px; top:167px; height:75px;width:73px;visibility: hidden;"
+                src="images/closing_lid.png" />
+            <img id="can6-7" style="position:absolute; left:153px; top:124px;width:23px;  visibility:hidden;height:72px"
+                src="images/wiretop (1).png" />
+            <img id="can6-8" style="position:absolute; left:175px; top:120px;width:23px;  visibility:hidden;height:72px"
+                src="images/wiretop (1).png" />
+            <img id="can6-9" style="position:absolute; left:75px; top:112px;  visibility:hidden;height:72px"
+                src="images/lefthand.png" />
+            <img id="can6-10" style="position:absolute; left:516px; top:263px; width:95px;visibility:hidden;"
+                src="images/cylinderhalf1.png" />
+            <img id="can6-11"
+                style="position:absolute; left:153px; top:124px;width:23px;  visibility:hidden;height:72px"
+                src="images/wireLside.png" />
+            <img id="can6-12"
+                style="position:absolute; left:153px; top:124px;width:23px;  visibility:hidden;height:72px"
+                src="images/wireLside.png" />
+            <img id="can6-13" style="position:absolute; left:75px; top:112px;  visibility:hidden;height:72px"
+                src="images/lefthand.png" />
+            <img id="can6-14" style="position:absolute; left:516px; top:263px; width:95px;visibility:hidden;"
+                src="images/cylinderhalf.png" />
+            <img id="can6-15"
+                style="position:absolute; left:153px; top:124px;width:23px;  visibility:hidden;height:72px"
+                src="images/wireRside.png" />
+            <img id="can6-16"
+                style="position:absolute; left:153px; top:124px;width:23px;  visibility:hidden;height:72px"
+                src="images/wireRside.png" />
+        </div>
+
+        <div class="simsubscreen" id="canvas7" style="visibility:hidden;">
+            <strong class="incanvas">STEP</strong>
+            <span class="circlebg">&nbsp;7&nbsp;</span>
+            <p class="steptext">Close the valve of the intake line and turn the
+                tap so that intake line will fill up and extra water will come from the discharge tube so that water
+                level is constant in the reservoir&nbsp;
+            </p>
+            <img id="can7-8"
+                style="position:absolute; left:377px; top:359px; width:192px;visibility:hidden; height:48px"
+                src="images/fillwater.png" />
+
+            <img id="can7-9" style="position:absolute; left:294px; top:123px; width:88px;visibility:hidden; height:52px"
+                src="images/fillwater.png" />
+            <img id="can7-7"
+                style="position:absolute; left:367px; top:133px; width:34px;visibility:hidden; height:235px"
+                src="images/fillwater.png" />
+
+            <img id="can7-1"
+                style="position:absolute; left:169px; top: 90px; height:404px; width:467px;visibility:hidden;"
+                src="images/connection3- pipefilling.png" />
+
+            <img id="can7-2"
+                style="position:absolute; left:294px; top:121px;  visibility:hidden;height:184px;cursor: pointer;"
+                title="valve" src="images/valve.PNG" />
+
+            <img id="can7-4"
+                style="position:absolute; left:252px; top:87px;width:208px;  visibility:hidden;height:170px"
+                src="images/bg.png" />
+
+            <img id="can7-12"
+                style="position:absolute; left:552px; top:142px; width:20px;visibility:hidden; height:127px"
+                src="images/pipe.png" />
+            <img id="can7-14" style="position:absolute; left:532px; top:59px;  visibility:hidden;height:184px"
+                src="images/valve.PNG" />
+
+            <img id="can7-5" style="position:absolute; left:560px; top:123px;  visibility:hidden;height:35px;width:82px"
+                src="images/pipehand (2).png" />
+
+            <img id="can7-6" style="position:absolute; left:560px; top:309px;  visibility:hidden;height:54px;width:82px"
+                src="images/pipe turning hand.png" />
+
+
+            <span id="note3" style="
+                position: absolute;
+                padding: 10px;
+                border: 1px solid black;
+                background-color: black;
+                border-radius: 5px;
+                left: 448px;
+                top: 167px;
+                width: 258px;
+                display:none;
+                ">
+                <p id="divi2" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
+                    Note:- Turn on the tap.
+                </p>
+                <input type="button" style="
+                cursor: pointer;
+                border-radius: 5px;
+                margin: 0auto;
+                margin-left: 125px;
+                margin-top: 0px;
+                " id="ok2" value="OK" onclick="ok1()" />
+            </span>
+
+        </div>
+        <div class="simsubscreen" id="canvas8" style="visibility:hidden;">
+            <h1 id="ph2"
+                style="position:absolute;left:46px;top: 171px; color: grey; text-align: center;visibility: hidden;">
+                Constant Head Test Permeability</h1>
+            <strong class="incanvas" id="incanvas_7" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_7" style="visibility:hidden;">&nbsp;8&nbsp;</span>
+            <p class="steptext" id="p2" style="visibility:hidden;">Now open the valve so that water flow to the sample.
+                For measure the flow rate
+                water should run to the system for few minutes.&nbsp;
+
+            </p>
+
+            <img id="can8-10"
+                style="position:absolute; left:294px; top:66px; width:268px;visibility:hidden; height: 416px"
+                src="images/fillwater.png" />
+            <img id="can8-9"
+                style="position:absolute; left:294px; top:66px; width:102px;visibility:hidden; height: 37px"
+                src="images/fillwater.png" />
+            <img id="can8-1a"
+                style="position:absolute; left:294px; top:66px; width:102px;visibility:hidden; height: 37px"
+                src="images/fillwater.png" />
+
+            <img id="can8-16"
+                style="position:absolute; left:243px; top:444px; width:50px;visibility:hidden; height: 26px"
+                src="images/fillwater.png" />
+            <img id="can8-17"
+                style="position:absolute; left:214px; top:381px; width:30px;visibility:hidden; height: 90px"
+                src="images/fillwater.png" />
+
+            <img id="can8-1"
+                style="position:absolute; left:169px; top: 64px; height:435px; width:491px;visibility:hidden;"
+                src="images/connection3- pipefilled(1).png" />
+            <img id="can8-15"
+                style="position:absolute; left:169px; top: 64px; height:435px; width:491px;visibility:hidden;"
+                src="images/connection3- pipefilled(2).png" />
+
+            <!-- <img id="can8-6"
+            style="position:absolute; left:169px; top: 64px; height:435px; width:491px;visibility:hidden;"
+            src="images/connection3- pipefilled(1).png" /> -->
+            <img id="can8-2"
+                style="position:absolute; left:303px; top:121px;  visibility:hidden;height:184px;cursor: pointer;"
+                title="valve" src="images/valve.PNG" />
+            <img id="can8-4"
+                style="position:absolute; left:252px; top:87px;width:208px;  visibility:hidden;height:170px"
+                src="images/bg.png" />
+            <img id="can8-12"
+                style="position:absolute; left:552px; top:142px; width:20px;visibility:hidden; height:127px"
+                src="images/pipe.png" />
+            <img id="can8-14" style="position:absolute; left:532px; top:59px;  visibility:hidden;height:184px"
+                src="images/valve.PNG" />
+            <img id="can8-5" style="position:absolute; left:560px; top:123px;  visibility:hidden;height:35px;width:82px"
+                src="images/pipehand (2).png" />
+
+
+            <span id="note4" style="
+            position: absolute;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: black;
+            border-radius: 5px;
+            left: 440px;
+            top: 92px;
+            width: 258px;
+            display:none;
+            ">
+                <p id="divi2" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
+                    Note:- Record the pore water pressure.
+                </p>
+                <input type="button" style="
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0auto;
+            margin-left: 125px;
+            margin-top: 0px;
+            " id="ok2" value="OK" onclick="ok3()" />
+            </span>
+
+        </div>
+        <div class="simsubscreen" id="canvas9" style="visibility:hidden;">
+            <strong class="incanvas">STEP</strong>
+            <span class="circlebg">&nbsp;9&nbsp;</span>
+            <p class="steptext">&nbsp;For the water flow rate measurement take a water beaker and measure its weight.
+                And record the values in the table.
+            </p>
+
+            <img id="can9-1" style="position:absolute; left:175px; top:272px; visibility:hidden;cursor: pointer;"
+                title="Weighing Machine" src="images/wm1.png" />
+            <img id="can9-4" style="position:absolute; left:235px; top:391px;cursor:pointer" src="images/on.png" />
+            <img id="can9-2"
+                style="position:absolute; left:265px; top:195px; visibility:hidden; width: 100px;cursor: pointer;"
+                title="Beaker" src="images/beakerwithmeasurement.png" />
+            <img id="can9-3"
+                style="position:absolute; left:559px; top:69px; visibility:hidden; width: 124px;cursor: pointer;"
+                title="Beaker" src="images/beakerwithhand.png" />
+            <p id="p9-111" style="position:absolute; left:292px; top:352px;font-size: 12px;font-family: verdana;"></p>
+            <p id="p9-222"
+                style="position:absolute; left:20px; top:470px; font-size:12px; visibility: hidden;font-family: verdana;">
+                Mass of
+                the empty container
+                = _________ </p>
+            <p id="p9_1" style="position:absolute; left:278px; top:375px;"></p>
+            <img id="9-3" style="position:absolute; left:339px; top:391px;cursor:pointer;visibility:hidden;"
+                src="images/tare.png" />
+
+
+        </div>
+        <div class="simsubscreen" id="canvas10" style="visibility:hidden;">
+
+            <strong class="incanvas" id="incanvas_10" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_10" style="visibility:hidden;">&nbsp;10&nbsp;</span>
+            <p class="steptext" id="p10" style="visibility:hidden;">&nbsp;Use and the stopwatch allow the discharge tube
+                to the beaker. Collect the 300 ml
+                of the water and stop the watch and remove the discharge tube.</p>
+            <p class="trial" id="t1"
+                style="text-transform: uppercase;font-weight: bold;font-family:verdana, sans-serif;position: absolute;left:637px;top:24px;visibility: hidden;">
+                <strong>Trial : 1</strong>
+            </p>
+
+
+
+            <img id="can10-2" style="position:absolute; left:484px; top:468px; visibility:hidden; width: 52px;"
+                src="images/beaker.png" />
+            <img id="can10-8" style="position:absolute; left:484px; top:468px; visibility:hidden; width: 52px;"
+                src="images/300_beaker (1).png" />
+            <img id="can10-1a"
+                style="position:absolute; left:469px; top:469px; visibility:hidden; width: 182px;height:50px"
+                src="images/tub.png" />
+            <img id="can10-1b"
+                style="position:absolute; left:538px; top:466px; visibility:hidden; width: 182px;height:58px"
+                src="images/tub.png" />
+
+            <img id="can10-1"
+                style="position:absolute; left:149px; top: 64px; height:435px; width:500px;visibility:hidden;"
+                src="images/connection3new.png" />
+
+
+            <img id="can10-4"
+                style="position:absolute; left:584px; top:60px; visibility:hidden; width: 120px;height:126px"
+                src="images/Shand.png" />
+            <img id="can10-7" style="position:absolute; left:597px; top:75px; visibility:hidden; width: 65px;"
+                src="images/stopwatch.png" />
+            <img id="can10-5" style="position:absolute; left:597px; top:75px; visibility:hidden; width: 65px;"
+                src="images/stopwatch_down.png" />
+            <img id="can10-6" style="position:absolute; left:503px; top:468px; visibility:hidden; width: 12px;"
+                src="images/waterdrop.png" />
+
+            <img id="can10-14" style="position:absolute; left:628px; top:92px; visibility:hidden; width: 3px;"
+                src="images/needle (1).png" />
+            <img id="can10-15"
+                style="position:absolute; left:481px; top:431px;width:60px;  visibility:hidden;height:45px"
+                src="images/redbox.png" />
+            <span id="note5" style="
+                position: absolute;
+                padding: 10px;
+                border: 1px solid black;
+                background-color: black;
+                border-radius: 5px;
+                left: 440px;
+                top: 192px;
+                width: 258px;
+                display:none;
+                ">
+                <p id="divi2" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
+                    Note:- Record the time taken and measure the mass of beaker with water.
+                </p>
+                <input type="button" style="
+                cursor: pointer;
+                border-radius: 5px;
+                margin: 0auto;
+                margin-left: 125px;
+                margin-top: 0px;
+                " id="ok2" value="OK" onclick="ok4()" />
+            </span>
+        </div>
+        <div class="simsubscreen" id="canvas11" style="visibility:hidden;">
+
+            <strong class="incanvas" id="incanvas_11" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_11" style="visibility:hidden;">&nbsp;11&nbsp;</span>
+            <p class="steptext" id="p11" style="visibility:hidden;">Measure the mass of container and water.&nbsp;</p>
+
+
+            <img id="can11-1" style="position:absolute; left:175px; top:272px; visibility:hidden;"
+                src="images/wm1.png" />
+            <img id="can11-4" style="position:absolute; left:235px; top:391px;cursor:pointer" src="images/on.png" />
+            <img id="can11-2" style="position:absolute; left:265px; top:195px; visibility:hidden; width: 100px;"
+                src="images/300_beaker (1).png" />
+            <img id="can11-3" style="position:absolute; left:559px; top:69px; visibility:hidden; width: 124px;"
+                src="images/300_beaker (2).png" />
+            <p id="p11-1111" style="position:absolute; left:289px; top:353px;font-size:12px;font-family: verdana;"></p>
+            <p id="p11-2222"
+                style="position:absolute; left:20px; top:470px; font-size:12px; font-family: verdana;visibility: hidden;">
+                Mass
+                of
+                the beaker and water
+                = _________ </p>
+            <p id="p11_1" style="position:absolute; left:278px; top:375px;"></p>
+            <img id="11-3" style="position:absolute; left:339px; top:391px;cursor:pointer;visibility:hidden;"
+                src="images/tare.png" />
+
+        </div>
+        <div class="simsubscreen" id="canvas12" style="visibility:hidden;">
+
+            <strong class="incanvas" id="incanvas_12" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_12" style="visibility:hidden;">&nbsp;12&nbsp;</span>
+            <p class="steptext" id="p12" style="visibility:hidden;">Add the measured values to the table.&nbsp;</p>
+
+
+            <p id="para_p1"
+                style="position:absolute; left:20px; top:54px;  visibility: hidden;font-size:12px;font-family: verdana;">
+            </p>
+            <p id="para_p2"
+                style="position:absolute; left:20px; top:88px;  visibility: hidden;font-size:12px;font-family: verdana;">
+            </p>
+            <p id="para_p3"
+                style="position:absolute; left:20px; top:127px;  visibility: hidden;font-size:12px;font-family: verdana;">
+            </p>
+            <p id="para_p4"
+                style="position:absolute; left:20px; top:166px; visibility: hidden;font-size:12px;font-family: verdana;">
+            </p>
+            <table>
+                <tr>
+                    <th>Test Number</th>
+                    <th style="text-align:center">1</th>
+
+                </tr>
+                <tr>
+                    <th>Time to accumulate water</th>
+                    <td style="text-align:center">8 sec</td>
+
+                </tr>
+                <tr>
+                    <th>Mass of beaker +water</th>
+                    <td style="text-align:center">419.4</td>
+
+                </tr>
+                <tr>
+                    <th>Mass of water</th>
+                    <td style="text-align:center">304.9</td>
+
+
+                </tr>
+
+
+            </table>
+        </div>
+        <div class="simsubscreen" id="canvas13" style="visibility:hidden;">
+
+            <strong class="incanvas" id="incanvas_10" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_10" style="visibility:hidden;">&nbsp;10&nbsp;</span>
+            <p class="steptext" id="p10" style="visibility:hidden;">&nbsp;Use and the stopwatch allow the discharge tube
+                to the beaker. Collect the 300 ml
+                of the water and stop the watch and remove the discharge tube.</p>
+            <p class="trial" id="t2"
+                style="text-transform: uppercase;font-weight: bold;font-family:verdana, sans-serif;position: absolute;left:637px;top:24px;visibility: hidden;">
+                <strong>Trial : 2</strong>
+            </p>
+
+            <img id="can13-1"
+                style="position:absolute; left:149px; top: 64px; height:435px; width:500px;visibility:hidden;"
+                src="images/connection3new.png" />
+            <img id="can13-1a"
+                style="position:absolute; left:469px; top:469px; visibility:hidden; width: 182px;height:50px"
+                src="images/tub.png" />
+            <img id="can13-1b"
+                style="position:absolute; left:538px; top:466px; visibility:hidden; width: 182px;height:58px"
+                src="images/tub.png" />
+            <img id="can13-8" style="position:absolute; left:484px; top:468px; visibility:hidden; width: 52px;"
+                src="images/300_beaker (1).png" />
+            <img id="can13-9" style="position:absolute; left:484px; top:468px; visibility:hidden; width: 52px;"
+                src="images/beaker_600.png" />
+            <img id="can13-4"
+                style="position:absolute; left:584px; top:60px; visibility:hidden; width: 120px;height:126px"
+                src="images/Shand.png" />
+            <img id="can13-5" style="position:absolute; left:597px; top:75px; visibility:hidden; width: 65px;"
+                src="images/stopwatch_down.png" />
+            <img id="can13-14" style="position:absolute; left:628px; top:92px; visibility:hidden; width: 3px;"
+                src="images/needle (1).png" />
+            <img id="can13-15"
+                style="position:absolute; left:481px; top:431px;width:60px;  visibility:hidden;height:45px"
+                src="images/redbox.png" />
+            <img id="can13-6" style="position:absolute; left:503px; top:468px; visibility:hidden; width: 12px;"
+                src="images/waterdrop.png" />
+            <span id="note6" style="
+                position: absolute;
+                padding: 10px;
+                border: 1px solid black;
+                background-color: black;
+                border-radius: 5px;
+                left: 440px;
+                top: 192px;
+                width: 258px;
+                display:none;
+                ">
+                <p id="divi2" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
+                    Note:- Record the time taken and measure the mass of beaker with water.
+                </p>
+                <input type="button" style="
+                cursor: pointer;
+                border-radius: 5px;
+                margin: 0auto;
+                margin-left: 125px;
+                margin-top: 0px;
+                " id="ok2" value="OK" onclick="ok5()" />
+            </span>
+
+        </div>
+        <div class="simsubscreen" id="canvas14" style="visibility:hidden;">
+
+            <strong class="incanvas" id="incanvas_11" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_11" style="visibility:hidden;">&nbsp;11&nbsp;</span>
+            <p class="steptext" id="p11" style="visibility:hidden;">Measure the mass of container and water.&nbsp;</p>
+
+
+            <img id="can11a-1" style="position:absolute; left:175px; top:272px; visibility:hidden;"
+                src="images/wm1.png" />
+            <img id="can11a-4" style="position:absolute; left:235px; top:391px;cursor:pointer" src="images/on.png" />
+            <img id="can11a-2" style="position:absolute; left:265px; top:195px; visibility:hidden; width: 100px;"
+                src="images/beaker_600.png" />
+            <img id="can11a-3" style="position:absolute; left:559px; top:69px; visibility:hidden; width: 124px;"
+                src="images/600_with_hand.png" />
+            <p id="p11-1111a" style="position:absolute; left:288px; top:352px;font-size:12px;font-family: verdana;"></p>
+            <p id="p11-2222b"
+                style="position:absolute; left:20px; top:470px; visibility: hidden;font-size:12px;font-family: verdana;">
+                Mass
+                of
+                the beaker and water
+                = _________ </p>
+            <p id="p11a_1" style="position:absolute; left:278px; top:375px;"></p>
+            <img id="11a-3" style="position:absolute; left:339px; top:391px;cursor:pointer;visibility:hidden;"
+                src="images/tare.png" />
+
+
+
+
+
+
+        </div>
+        <div class="simsubscreen" id="canvas15" style="visibility: hidden">
+            <strong class="incanvas" id="incanvas_12" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_12" style="visibility:hidden;">&nbsp;12&nbsp;</span>
+            <p class="steptext" id="p12" style="visibility:hidden;">Add the measured values to the table.&nbsp;</p>
+
+            </p>
+            <p id="para_p11"
+                style="position:absolute; left:20px; top:43px; visibility: hidden;font-size:12px;font-family: verdana;">
+            </p>
+            <p id="para_p22"
+                style="position:absolute; left:20px; top:78px; visibility: hidden;font-size:12px;font-family: verdana;">
+            </p>
+            <p id="para_p33"
+                style="position:absolute; left:20px; top:112px; visibility: hidden;font-size:12px;font-family: verdana;">
+            </p>
+            <p id="para_p44"
+                style="position:absolute; left:20px; top:148px;  visibility: hidden;font-size:12px;font-family: verdana;">
+            </p>
+            <table id="my_Table"
+                style="visibility: hidden;  height:272px;width:527px;left:13px; position: absolute; top:222px" border
+                size="1">
+                <tr>
+                    <th>Test Number</th>
+                    <th style="text-align:center">1</th>
+                    <th style="text-align:center">2</th>
+
+                </tr>
+                <tr>
+                    <th>Time to accumulate water</th>
+                    <td style="text-align:center">8 sec</td>
+                    <td style="text-align:center">13 sec</td>
+
+                </tr>
+                <tr>
+                    <th>Mass of beaker +water</th>
+                    <td style="text-align:center">419.4</td>
+                    <td style="text-align:center">621.6</td>
+
+
+                </tr>
+                <tr>
+                    <th>Mass of water</th>
+                    <td style="text-align:center">304.9</td>
+                    <td style="text-align:center">507.1</td>
+                </tr>
+
+
+            </table>
+
+        </div>
+
+        <div class="simsubscreen" id="canvas16" style="visibility:hidden;">
+
+            <strong class="incanvas" id="incanvas_10" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_10" style="visibility:hidden;">&nbsp;10&nbsp;</span>
+            <p class="steptext" id="p10" style="visibility:hidden;">&nbsp;Use and the stopwatch allow the discharge tube
+                to the beaker. Collect the 300 ml
+                of the water and stop the watch and remove the discharge tube.</p>
+            <p class="trial" id="t3"
+                style="text-transform: uppercase;font-weight: bold;font-family:verdana, sans-serif;position: absolute;left:637px;top:24px;visibility: hidden;">
+                <strong>Trial : 3</strong>
+            </p>
+
+            <img id="can15-1"
+                style="position:absolute; left:149px; top: 64px; height:435px; width:500px;visibility:hidden;"
+                src="images/connection3new.png" />
+            <img id="can15-1a"
+                style="position:absolute; left:469px; top:469px; visibility:hidden; width: 182px;height:50px"
+                src="images/tub.png" />
+            <img id="can15-1b"
+                style="position:absolute; left:538px; top:466px; visibility:hidden; width: 182px;height:58px"
+                src="images/tub.png" />
+            <img id="can15-8" style="position:absolute; left:484px; top:468px; visibility:hidden; width: 52px;"
+                src="images/beaker_600.png" />
+            <img id="can15-9" style="position:absolute; left:484px; top:468px; visibility:hidden; width: 52px;"
+                src="images/900.png" />
+            <img id="can15-4"
+                style="position:absolute; left:584px; top:60px; visibility:hidden; width: 120px;height:126px"
+                src="images/Shand.png" />
+            <img id="can15-5" style="position:absolute; left:597px; top:75px; visibility:hidden; width: 65px;"
+                src="images/stopwatch_down.png" />
+            <img id="can15-14" style="position:absolute; left:628px; top:92px; visibility:hidden; width: 3px;"
+                src="images/needle (1).png" />
+            <img id="can15-15"
+                style="position:absolute; left:481px; top:431px;width:60px;  visibility:hidden;height:45px"
+                src="images/redbox.png" />
+            <img id="can15-6" style="position:absolute; left:503px; top:468px; visibility:hidden; width: 12px;"
+                src="images/waterdrop.png" />
+            <span id="note7" style="
+                position: absolute;
+                padding: 10px;
+                border: 1px solid black;
+                background-color: black;
+                border-radius: 5px;
+                left: 440px;
+                top: 192px;
+                width: 258px;
+                display:none;
+                ">
+                <p id="divi2" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
+                    Note:- Record the time taken and measure the mass of beaker with water.
+                </p>
+                <input type="button" style="
+                cursor: pointer;
+                border-radius: 5px;
+                margin: 0auto;
+                margin-left: 125px;
+                margin-top: 0px;
+                " id="ok2" value="OK" onclick="ok7()" />
+            </span>
+
+        </div>
+
+
+        <div class="simsubscreen" id="canvas17" style="visibility: hidden">
+            <strong class="incanvas" id="incanvas_11" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_11" style="visibility:hidden;">&nbsp;11&nbsp;</span>
+            <p class="steptext" id="p11" style="visibility:hidden;">Measure the mass of container and water.&nbsp;</p>
+
+
+            <img id="can16a-1" style="position:absolute; left:175px; top:272px; visibility:hidden;"
+                src="images/wm1.png" />
+            <img id="can16a-4" style="position:absolute; left:235px; top:391px;cursor:pointer" src="images/on.png" />
+            <img id="can16a-2" style="position:absolute; left:265px; top:195px; visibility:hidden; width: 100px;"
+                src="images/beaker_900.png" />
+            <img id="can16a-3" style="position:absolute; left:559px; top:69px; visibility:hidden; width: 124px;"
+                src="images/900_with_hand.png" />
+            <p id="p11-1111aa" style="position:absolute; left:289px; top:351px; font-size:12px;font-family: verdana;">
+            </p>
+            <p id="p11-2222bb"
+                style="position:absolute; left:20px; top:470px; font-size:12px;font-family: verdana; visibility: hidden;">
+                Mass
+                of
+                the beaker and water
+                = _________ </p>
+            <p id="p11aa_1" style="position:absolute; left:278px; top:375px;"></p>
+            <img id="11aa-3" style="position:absolute; left:339px; top:391px;cursor:pointer;visibility:hidden;"
+                src="images/tare.png" />
+
+
+        </div>
+
+        <div class="simsubscreen" id="canvas18" style="visibility: hidden">
+            <strong class="incanvas" id="incanvas_12" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_12" style="visibility:hidden;">&nbsp;12&nbsp;</span>
+            <p class="steptext" id="p12" style="visibility:hidden;">Add the measured values to the table.&nbsp;</p>
+
+            </p>
+            <p id="para_p11" style="position:absolute; left:20px; top:25px; font-size:12px; visibility: hidden;"></p>
+            <p id="para_p22" style="position:absolute; left:20px; top:53px; font-size:12px; visibility: hidden;"></p>
+            <p id="para_p33" style="position:absolute; left:20px; top:82px; font-size:12px; visibility: hidden;"></p>
+            <p id="para_p44" style="position:absolute; left:20px; top:113px; font-size:12px; visibility: hidden;"></p>
+            <table id="my_Tables"
+                style="visibility: hidden;  height:272px;width:527px;left:13px; position: absolute; top:222px" border
+                size="1">
+                <tr>
+                    <th>Test Number</th>
+                    <th style="text-align:center">1</th>
+                    <th style="text-align:center">2</th>
+                    <th style="text-align:center">3</th>
+
+                </tr>
+                <tr>
+                    <th>Time to accumulate water</th>
+                    <td style="text-align:center">8 sec</td>
+                    <td style="text-align:center">13 sec</td>
+                    <td style="text-align:center">19 sec</td>
+
+                </tr>
+                <tr>
+                    <th>Mass of beaker +water</th>
+                    <td style="text-align:center">419.4</td>
+                    <td style="text-align:center">621.6</td>
+                    <td style="text-align:center">811.5</td>
+
+
+                </tr>
+                <tr>
+                    <th>Mass of water</th>
+                    <td style="text-align:center">304.9</td>
+                    <td style="text-align:center">507.1</td>
+                    <td style="text-align:center">697</td>
+                </tr>
+
+
+            </table>
+
+        </div>
+        <div class="simsubscreen" id="canvas19" style="visibility: hidden">
+            <strong class="incanvas" id="incanvas_13" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_13" style="visibility:hidden;">&nbsp;13&nbsp;</span>
+            <p class="steptext" id="p13" style="visibility:hidden;">Calculate the head
+                applied to the sample. Measure the total head at the top monometer and total head at the bottom
+                monometer.&nbsp;</p>
+
+            <img id="can18-1"
+                style="position:absolute; left:149px; top: 64px; height:435px; width:500px;visibility:hidden;"
+                src="images/connection3new.png" />
+            <img id="can18-1a"
+                style="position:absolute; left:469px; top:469px; visibility:hidden; width: 182px;height:50px"
+                src="images/tub.png" />
+            <!-- <img id="can15-3"
+            style="position:absolute; left:252px; top:87px;width:208px;  visibility:hidden;height:170px"
+            src="images/bg.png" /> -->
+            <img id="can18-4" style="position: absolute;left: 82px;top: 118px;
+            /* height: 6px; */
+            width: 135px;
+            visibility: hidden;
+          " src="images/scale49.8.png" />
+            <img id="can18-3" style="position: absolute;left: 82px;top: 118px;
+          /* height: 6px; */
+          width: 135px;
+          visibility: hidden;
+        " src="images/scale11.5.png" />
+
+
+        </div>
+
+
+        <div class="simsubscreen" id="canvas20" style="visibility: hidden">
+
+            <strong class="incanvas" id="incanvas_14" style="visibility:hidden;">STEP</strong>
+            <span class="circlebg" id="circlebg_14" style="visibility:hidden;">&nbsp;14&nbsp;</span>
+            <p class="steptext" id="p20" style="visibility:hidden;">Observation & Calculation.&nbsp;</p>
+
+            <span class="tooltip variables hidden">
+                <strong class="variables-heading">Variables used in calculation</strong>
+                <span class="variables-description">
+                    <span class="variables-descrption">Mass of
+                        container and initial
+                        volume of soil=1256.5g</span><br>
+                    <span class="variables-descrption">Mass of container and remaining soil=578.6g</span><br>
+                    <span class="variables-descrption">Mass of soil in the column=675.6g</span><br>
+                    <span class="variables-descrption">Mass of empty beaker=49.8g</span><br>
+                    <span class="variables-descrption">Total head at the top monometer=49.8cm</span><br>
+                    <span class="variables-descrption">Total head at the top monometer=11.3cm</span><br>
+                    <span class="variables-descrption">Vertical distance between monometer outlets=114.5cm</span><br>
+
+                </span>
+            </span>
+
+            <span class="tooltips variable hidden">
+                <strong class="variables-heading">Formula</strong>
+                <span class="variable-description">
+                    <span class="frac1">K=<span class="frac"><sup>QL</sup></sub><span>&frasl;</span><sub>tAh
+                            </sub></span></span><br>
+                    <span class="variable-descrption">Q=Volume of water collected in(ml)</span><br>
+                    <span class="variable-descrption">L=Sample Height(cm)</span><br>
+                    <span class="variable-descrption">t=Duration of water collection in(sec)</span><br>
+                    <span class="variable-descrption">A=Cross Sectional Area of soil Specimen(cm<sup>2</sup>)</span><br>
+                    <span class="variable-descrption">h=Total Constant Head(cm)</span><br>
+
+
+                </span>
+            </span>
+
+
+
+            <table id="my_Table1"
+                style="visibility: hidden;  height:212px;width:403px;left:6px; position: absolute; top:58px; font-size:12px;"
+                border size="1">
+                <tbody>
+                    <tr>
+                        <th>Test Number</th>
+                        <th style="text-align: center" ;>1</th>
+                        <th style="text-align: center" ;>2</th>
+                        <th style="text-align: center" ;>3</th>
+
+
+
+                    </tr>
+                    <tr>
+                        <th>Time to accumulate water</th>
+                        <td id="td1" style="text-align: center" ;>8sec</td>
+                        <td id="td2" style="text-align: center" ;>13sec</td>
+                        <td id="td3" style="text-align: center" ;>19sec</td>
+
+
+                    </tr>
+                    <tr>
+                        <th>Mass of beaker+water</th>
+                        <td id="td1" style="text-align: center" ;>419.4</td>
+                        <td id="td22" style="text-align: center" ;>621.6</td>
+                        <td id="td33" style="text-align: center" ;>811.5</td>
+
+
+                    </tr>
+                    <tr>
+                        <th>Mass of water</th>
+                        <td id="td1" style="text-align: center" ;>304.9</td>
+                        <td id="td222" style="text-align: center" ;>507.1</td>
+                        <td id="td333" style="text-align: center" ;>697</td>
+
+
+                    </tr>
+                    <tr>
+                        <th>Coefficient of Permeability </th>
+                        <td><input type="text" id="td4"
+                                style="height:21px;width:43px;left:225px; position: absolute; top:175px;font-weight: bold; text-align: center;">
+                        </td>
+                        <td><input type="text" id="td44"
+                                style="height:21px;width:44px;left:285px; position: absolute; top:175px;font-weight: bold; text-align: center;">
+                        </td>
+                        <td><input type="text" id="td444"
+                                style="height:21px;width:45px;left:344px; position: absolute; top:175px;font-weight: bold; text-align: center;">
+                        </td>
+                    </tr>
+                </tbody>
+
+
+                <button id="btn1" style="position: absolute;left: 340px;top: 277px; visibility: hidden;"
+                    onclick="checkInput()">CHECK
+                </button>
+                <button id="resbtn1" style="position: absolute; left: 340px;top: 277px; visibility:hidden;"
+                    onclick="getResult1()">RESULT</button>
+                <span id="alerttxt" class="alertmsg" style="position:absolute; left: 150px;top: 281px;color: red;font-family: verdana;
+                    font-size: 12px;">Please Enter Value to proceed</span>
+
+
+            </table>
+
+
+            <p id="para_p11a" style="position: absolute;left: 20px;top: 382px;font-size: 12px;visibility: hidden;
+              "></p>
+            <p id="para_p12b" style=" position: absolute; left: 20px;top: 414px;font-size: 12px;visibility: hidden;
+              "></p>
+            <p id="para_p13c" style="position: absolute;
+                left: 20px;
+                top: 441px;
+                font-size: 12px;
+                visibility: hidden;
+              "></p>
+
+            <p id="iv"
+                style="position:absolute; font-family:verdana;font-size:14px;margin-left:18px; top:303px; visibility:hidden;">
+                Coefficient of Permeability (K<sub>avg</sub>) =
+                <input id="res" type="text"
+                    style="border:none;border-bottom: 1px solid;width:55px;font-family:verdana;font-size:12px;text-align:center;"
+                    autocomplete="off" oninput="checkInputValid(this)"><span id="rightAns"
+                    class="resultStyle"></span><input id="chk" type="button" value="CHECK"
+                    style="cursor:pointer;margin-left: 5px;" onclick="checkResult();"><span id="alertId">Please
+                    Enter Value to proceed</span>
+        </div>
+
+        <!-- nextButton -->
+        <div id=" nav">
+            <img id="nextButton" onclick="navNext()" src="images/Next.png" />
+        </div>
+        <!--Blinking Arrow	-->
+        <img class="" id="arrow1" style="visibility:hidden;" src="images/arrow1.png" />
+
+
+        <div id="copyright"> &copy; 2020 -
+            <script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal,
+            Department of
+            Water Resources & Ocean Engineering
+        </div>
+</body>
+
+</html>
