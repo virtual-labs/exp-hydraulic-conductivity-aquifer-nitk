@@ -1,0 +1,1440 @@
+html {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  #simscreen {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 600px;
+    width: 800px;
+    border: solid 1px;
+    background-color: white;
+  }
+  
+  #title {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    background-color: black;
+    font-family: verdana;
+    color: White;
+    text-transform: uppercase;
+  }
+
+  .cont-1 {
+    left: 30px;
+    height: 90px;
+    margin-top: 50px;
+  }
+  
+  #title h3 {
+    padding-top: 2px;
+    margin: 0px;
+  }
+  
+  .simsubscreen {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    height: 530px;
+    width: 745px;
+  }
+  
+  
+  .incanvas {
+    margin: 5px 0 0 5px;
+    padding: 0;
+  }
+  
+  #nextButton {
+    position: absolute;
+    left: 750px;
+    top: 530px;
+    cursor: pointer;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #333;
+    z-index: 1000;
+}
+#alertId2 {
+  position: absolute;
+  left: 150px;
+  top: 281px;
+  color: red;
+  font-family: verdana;
+  font-size: 12px;
+  cursor: pointer;
+}
+  .circlebg
+  {
+    border-radius:100%;
+    font-size:25px;
+    color:#fff;
+    text-align:center;
+    background:#000
+  }
+  
+  .steptext
+  {
+    display:inline;
+    font-size:14px;
+  }
+  
+  #copyright {
+    position: absolute;
+    left: 60px;
+    top: 580px;
+    font-size: 12px;
+  }
+  #alertId {
+    visibility: hidden;
+  }
+  
+  #alertId {
+    color: red;
+    font-family: verdana;
+    font-size: 12px;
+  }
+  #alertId2 {
+    visibility: hidden;
+  }
+  
+  #alertId2 {
+    color: red;
+    font-family: verdana;
+    font-size: 12px;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    font-family: verdana;
+    font-size: 14px;
+  }
+  
+  .tooltip .tooltiptext {
+    font-family: verdana;
+    font-size: 14px;
+    visibility: hidden;
+    width: 500px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 100;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  /* input[type="text"]:focus */
+  /* { */
+  /* background-color: #f4f6f7 ; */
+  /* } */
+  .inputStyle {
+    border: none;
+    border-bottom: 1px solid;
+    width: 55px;
+    font-family: verdana;
+    font-size: 14px;
+    text-align: center;
+  }
+  .resultStyle {
+    border: none;
+    border-bottom-style: double;
+    width: 55px;
+    font-family: verdana;
+    font-size: 14px;
+    text-align: center;
+  }
+  .resultStyles {
+    border: none;
+    border-bottom-style: solid;
+    width: 55px;
+    font-family: verdana;
+    font-size: 14px;
+    text-align: center;
+    top:175px;
+  }
+  @keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      visibility: hidden;
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes moveempty
+{
+	from {left:320px; top:84px;}
+	to {left:215px; top:251px;}
+}
+
+@keyframes moveempty
+{
+	from {left:404px; top:84px;}
+	to {left:215px; top:251px;}
+}
+@-webkit-keyframes shiftCa
+{
+0% {-webkit-transform: rotate(0deg);}    
+100% {-webkit-transform: rotate(-20deg);}
+}
+
+/* Standard syntax */
+@keyframes shiftCa 
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-20deg);}
+}
+@-webkit-keyframes shiftCas
+{
+0% {-webkit-transform: rotate(0deg);}    
+100% {-webkit-transform: rotate(-20deg);}
+}
+
+/* Standard syntax */
+@keyframes shiftCas 
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-20deg);}
+}
+  
+  @-webkit-keyframes movePlate
+{
+	from {left:404px; top:84px;}
+	to {left:204px; top:171px;}
+}
+
+@keyframes movePlate
+{
+	from {left:320px; top:84px;}
+	to {left:204px; top:171px;}
+}
+@-webkit-keyframes movePlane
+{
+	from {left:320px; top:84px;}
+	to {left:242px; top:120px;}
+}
+
+@keyframes movePlane
+{
+	from {left:320px; top:84px;}
+	to {left:242px; top:120px;}
+}
+@-webkit-keyframes movebase
+{
+	from {left:236px; top:120px;}
+	to {left:236px; top:200px;}
+}
+
+@keyframes movebase
+{
+	from {left:236px; top:120px;}
+	to {left:236px; top:286px;}
+}
+@-webkit-keyframes moveTrowel
+{
+	from {left:528px; top:96px;}
+	to {left:528px; top:332px;}
+}
+
+@keyframes moveTrowel
+{
+	from {left:528px; top:96px;}
+	to {left:528px; top:332px;}
+}
+
+@-webkit-keyframes moveTrowel2
+{
+	from {left:500px; top:300px;}
+	to {left:284px; top:121px;}
+}
+
+@keyframes moveTrowel2
+{
+	from {left:500px; top:300px;}
+	to {left:284px; top:121px;}
+}
+@-webkit-keyframes moveTro
+{
+	from {left:528px; top:96px;}
+	to {left:528px; top:332px;}
+}
+
+@keyframes moveTro
+{
+	from {left:528px; top:96px;}
+	to {left:528px; top:332px;}
+}
+@-webkit-keyframes moveTrow
+{
+	from {left:528px; top:96px;}
+	to {left:528px; top:332px;}
+}
+
+@keyframes moveTrow
+{
+	from {left:528px; top:96px;}
+	to {left:528px; top:332px;}
+}
+@-webkit-keyframes moveTro2
+{
+	from {left:500px; top:300px;}
+	to {left:284px; top:121px;}
+}
+
+@keyframes moveTro2
+{
+	from {left:500px; top:300px;}
+	to {left:284px; top:121px;}
+}
+@-webkit-keyframes moveTro3
+{
+	from {left:500px; top:300px;}
+	to {left:284px; top:121px;}
+}
+
+@keyframes moveTro3
+{
+	from {left:500px; top:300px;}
+	to {left:284px; top:121px;}
+}
+@-webkit-keyframes tamp
+{
+	0% {left:263px; top:100px;}
+	7% {left:266px; top:90px;}
+	14% {left:268px; top:100px;}
+	21% {left:269px; top:92px;}
+	28% {left:271px; top:110px;}
+	35% {left:274px; top:99px;}
+	42% {left:276px; top:108px;}
+	49% {left:279px; top:100px;}
+	56% {left:280px; top:110px;}
+	63% {left:281px; top:97px;}
+	70% {left:275px; top:109px;}
+	77% {left:265px; top:86px;}
+	84% {left:264px; top:110px;}
+	91% {left:262px; top:89px;}
+	100% {left:260px; top:99px;}
+}
+@-webkit-keyframes tamping
+{
+	0% {left:263px; top:47px;}
+	7% {left:266px; top:37px;}
+	14% {left:268px; top:47px;}
+	21% {left:269px; top:39px;}
+	28% {left:271px; top:57px;}
+	35% {left:274px; top:46px;}
+	42% {left:276px; top:54px;}
+	49% {left:279px; top:47px;}
+	56% {left:280px; top:57px;}
+	63% {left:281px; top:44px;}
+	70% {left:275px; top:54px;}
+	77% {left:265px; top:32px;}
+	84% {left:264px; top:37px;}
+	91% {left:262px; top:35px;}
+	100% {left:260px; top:47px;}
+}
+
+@keyframes tamp
+{
+	
+  
+    0% {left:263px; top:100px;}
+    7% {left:266px; top:90px;}
+    14% {left:268px; top:100px;}
+    21% {left:269px; top:92px;}
+    28% {left:271px; top:110px;}
+    35% {left:274px; top:99px;}
+    42% {left:276px; top:108px;}
+    49% {left:276px; top:100px;}
+    56% {left:279px; top:110px;}
+    63% {left:280px; top:97px;}
+    70% {left:275px; top:109px;}
+    77% {left:265px; top:86px;}
+    84% {left:264px; top:110px;}
+    91% {left:262px; top:89px;}
+    100% {left:260px; top:99px;}
+ 
+  
+  
+}
+@-webkit-keyframes movenet
+{
+	from {left:537px; top:120px;}
+	to {left:244px; top:162px;}
+}
+
+@keyframes movenet
+{
+	from {left:537px; top:120px;}
+	to {left: 254px; top:162px;}
+}
+@-webkit-keyframes movelid
+{
+	from {left:537px; top:109px;}
+	to {left:253px; top:107px;}
+}
+
+@keyframes movelid
+{
+	from {left:537px; top:109px;}
+	to {left:253px; top:107px;}
+}
+@keyframes fallSand
+{
+	from {left:210px; top:43px;}
+	to {left:210px; top:150px;}
+}
+@keyframes fallSa
+{
+	from {left:210px; top:43px;}
+	to {left:210px; top:150px;}
+}
+@keyframes fallSan
+{
+	from {left:210px; top:43px;}
+	to {left:210px; top:69px;}
+}
+@-webkit-keyframes movetop
+{
+	from {left:537px; top:120px;}
+	to {left:250px; top:153px;}
+}
+
+@keyframes movetop
+{
+	from {left:537px; top:120px;}
+	to {left:250px; top:153px;}
+}
+@keyframes Tapon {
+	0% {transform:rotateY(0deg);}
+	100% {transform:rotateY(30deg);}
+}
+
+@keyframes tightenNut {
+	0% {transform:rotateY(0deg);}
+	100% {transform:rotateY(25deg);}
+}
+@-webkit-keyframes movePlate
+{
+	from {left:320px; top:84px;}
+	to {left:204px; top:171px;}
+}
+
+@keyframes movePlate
+{
+	from {left:320px; top:84px;}
+	to {left:204px; top:171px;}
+}
+@-webkit-keyframes moveHand
+{
+	from {left:75px; top:112px;}
+	to {left:302px; top:221px;}
+}
+
+@keyframes moveHand
+{
+	from {left:75px; top:112px;}
+	to {left:302px; top:221px;}
+}
+@keyframes moveBgd {
+  0%{
+    left: 252px; 
+    top: 102px;
+    width: 150px;
+    transform: scale(0);
+
+  }
+  
+  100%{
+    left: 481px; 
+    width: 198px;
+    top: 102px;
+    height:157px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveBck {
+  0%{
+    left: 252px; 
+    top: 102px;
+    width: 150px;
+    transform: scale(0);
+
+  }
+  
+  100%{
+    left: 481px; 
+    width: 198px;
+    top: 102px;
+    height:157px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveValve {
+  0%{
+    left: 292px; 
+    top: 121px;
+    width: 15px;
+    transform: scale(0);
+
+  }
+  
+  100%{
+    left: 572px; 
+    width: 15px;
+    top: 104px;
+    height:145px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveVlv {
+  0%{
+    left: 292px; 
+    top: 121px;
+    width: 15px;
+    transform: scale(0);
+
+  }
+  
+  100%{
+    left: 572px; 
+    width: 15px;
+    top: 104px;
+    height:145px;
+    transform: scale(1);
+
+  }
+}
+@keyframes closeValve
+{
+	from {left:532px; top:109px;}
+	to {left:532px; top:59px;}
+}
+@keyframes openValve
+{
+	from {left:532px; top:59px;}
+	to {left:532px; top:109px;}
+}
+@keyframes handUp
+{
+	from {left:560px; top:173px;}
+	to {left:560px; top:123px;}
+}
+@keyframes handDown
+{
+	from {left:560px; top:123px;}
+	to {left:560px; top:173px;}
+}
+
+@keyframes rotateValve {
+  0%{
+    left: 292px; 
+    top: 121px;
+    width: 15px;
+    transform: scale(0);
+
+  }
+  
+  100%{
+    left: 529px; 
+    width: 138px;
+    top: 65px;
+    height:188px;
+    transform: scale(1);
+
+  }
+}
+@keyframes rotValve {
+  0%{
+    left: 292px; 
+    top: 121px;
+    width: 15px;
+    transform: scale(0);
+
+  }
+  
+  100%{
+    left: 529px; 
+    width: 138px;
+    top: 126px;
+    height:188px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveBg {
+  0%{
+    left: 290px; 
+    top: 229px;
+    width: 150px;
+    transform: scale(0);
+
+  }
+  
+  100%{
+    left: 481px; 
+    width: 198px;
+    top: 102px;
+    height:157px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveBgs {
+  0%{
+    left: 290px; 
+    top: 229px;
+    width: 150px;
+    transform: scale(0);
+
+  }
+  
+  100%{
+    left: 481px; 
+    width: 198px;
+    top: 102px;
+    height:157px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveBgss {
+  0%{
+    left: 290px; 
+    top: 229px;
+    width: 150px;
+    transform: scale(0);
+
+  }
+  
+  100%{
+    left: 481px; 
+    width: 198px;
+    top: 102px;
+    height:157px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveCap {
+  0%{
+    left: 290px; 
+    top: 229px;
+    width: 100px;
+    transform: scale(1);
+
+  }
+  
+  100%{
+    left: 533px; 
+    width: 94px;
+    top: 206px;
+    height:45px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveWire {
+  0%{
+    left: 290px; 
+    top: 229px;
+    width: 100px;
+    transform: scale(1);
+
+  }
+  
+  100%{
+    left: 573px; 
+    width: 101px;
+    top: 98px;
+    height:92px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveFix {
+  0%{
+    left: 573px; 
+    top: 101px;
+    width: 101px;
+
+  }
+  
+  100%{
+    left: 573px; 
+    width: 101px;
+    top: 129px;
+    height:92px;
+    
+
+  }
+}
+@-webkit-keyframes moveHandLeft
+{
+	from {left:75px; top:112px;}
+	to {left:195px; top:378px;}
+}
+
+@keyframes moveHandLeft
+{
+	from {left:75px; top:112px;}
+	to {left:195px; top:378px;}
+}
+@-webkit-keyframes moveHandLft
+{
+	from {left:75px; top:112px;}
+	to {left:190px; top:435px;}
+}
+
+@keyframes moveHandLft
+{
+	from {left:75px; top:112px;}
+	to {left:190px; top:435px;}
+}
+@keyframes moveCylinder {
+  0%{
+    left:298px; 
+    top: 263px;
+    width: 95px;
+    transform: scale(1);
+
+  }
+  
+  100%{
+    left: 562px; 
+    width: 102px;
+    top: 67px;
+    height:157px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveLWire {
+  0%{
+    left: 298px; 
+    width: 53px;
+    top: 266px;
+    height:67px;
+    transform: scale(1);
+
+  }
+  100%{
+    left: 482px; 
+    top: 165px;
+    width: 70px;
+    transform: scale(1);
+
+  }
+  
+  
+}
+@keyframes moveLFix {
+  0%{
+    left: 482px; 
+    width: 53px;
+    top: 164px;
+    height:67px;
+    transform: scale(1);
+
+  }
+  100%{
+    left: 504px; 
+    top: 164px;
+    width: 70px;
+    transform: scale(1);
+
+  }
+  
+  
+}
+@keyframes moveTopCylinder {
+  0%{
+    left:298px; 
+    top: 263px;
+    width: 95px;
+    transform: scale(1);
+
+  }
+  
+  100%{
+    left: 491px; 
+    width: 102px;
+    top: 138px;
+    height:182px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveRWire {
+  0%{
+    left: 298px; 
+    width: 53px;
+    top: 266px;
+    height:67px;
+    transform: scale(1);
+
+  }
+  100%{
+    left: 607px; 
+    top: 165px;
+    width: 70px;
+    transform: scale(1);
+
+  }
+  
+  
+}
+@keyframes moveRFix {
+  0%{
+    left: 607px; 
+    width: 70px;
+    top: 164px;
+    height:67px;
+    transform: scale(1);
+
+  }
+  100%{
+    left: 581px; 
+    top: 169px;
+    width: 70px;
+    transform: scale(1);
+
+  }
+  
+  
+}
+
+@keyframes fillWater {
+  0%{
+    left: 543px; 
+    top: 381px;
+    width: 0px;
+   
+
+  }
+  
+  100%{
+    left: 377px; 
+    top: 361px;
+    height:41px;
+    
+
+  }
+}
+@keyframes fillWaters {
+  0%{
+    left: 367px; 
+    top: 215px;
+    
+   
+
+  }
+  
+  100%{
+    left: 367px; 
+    top: 126px;
+  }
+}
+@keyframes fillTube {
+  0%{
+    left: 294px; 
+    top: 123px;
+    
+   
+
+  }
+  
+  100%{
+    left: 294px; 
+    top: 104px;
+  }
+}
+@keyframes reduceTube {
+  0%{
+    left: 294px; 
+    top: 73px;
+    
+   
+
+  }
+  
+  100%{
+    left: 294px; 
+    top: 81px;
+  }
+}
+@keyframes wateringTube {
+  0%{
+    left: 294px; 
+    top: 81px;
+    height:0px
+   
+
+  }
+  
+  100%{
+    left: 294px; 
+    top: 81px;
+    height:416px;
+  }
+}
+@keyframes mano {
+  0%{
+    left: 243px; 
+    top: 447px;
+    height:26px;
+   
+
+  }
+  
+  100%{
+    left: 243px; 
+    top: 357px;
+    height:126px;
+  }
+}
+@keyframes manometer {
+  0%{
+    left: 214px; 
+    top: 447px;
+    height:26px;
+   
+
+  }
+  
+  100%{
+    left: 214px; 
+    top: 274px;
+    height:206px;
+  }
+}
+@keyframes moveDrop
+{
+	from {left:503px; top:468px;}
+	to {left:503px; top:505px;}
+}
+@keyframes moveDropping
+{
+	from {left:503px; top:468px;}
+	to {left:503px; top:494px;}
+}
+@keyframes moveDroppings
+{
+	from {left:503px; top:468px;}
+	to {left:503px; top:479px;}
+}
+@keyframes stopwatch {
+ from{
+  transform: rotate(0deg);
+ }
+  to {
+    transform: rotate(47deg);
+  }
+  
+}
+@keyframes stopwatch1 {
+  from{
+   transform: rotate(0deg);
+  }
+   to {
+     transform: rotate(27deg);
+   }
+   
+ }
+ @keyframes stopwatch2 {
+  from{
+   transform: rotate(0deg);
+  }
+   to {
+     transform: rotate(37deg);
+   }
+   
+ }
+@keyframes moveBeaker
+{
+	from {left:559px; top:69px;}
+	to {left:265px; top:195px;}
+}
+table {
+  position: absolute;
+  top: 231px;
+  border: 1px solid black;
+  width: 57%;
+  height: 243px;
+  font-size: 12px;
+    font-family: verdana;
+  
+  }
+  thead>tr {
+   
+    position: relative;
+    display: block;
+    font-size: 12px;
+    font-family: verdana;
+    }
+    td, th{
+      border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+  }
+  @keyframes moveBackground {
+    0%{
+      left: 252px; 
+      top: 102px;
+      width: 150px;
+      transform: scale(0);
+  
+    }
+    
+    100%{
+      left: 481px; 
+      width: 198px;
+      top: 102px;
+      height:157px;
+      transform: scale(1);
+  
+    }
+  }
+  @keyframes moveScale {
+    0%{
+      left: 252px; 
+      top: 102px;
+      width: 150px;
+      transform: scale(0);
+  
+    }
+    
+    100%{
+      left: 481px; 
+      width: 235px;
+      top: 79px;
+      height:218px;
+      transform: scale(1);
+  
+    }
+  }
+  @keyframes moveScale2 {
+    0%{
+      left: 252px; 
+      top: 102px;
+      width: 150px;
+      transform: scale(0);
+  
+    }
+    
+    100%{
+      left: 481px; 
+      width: 235px;
+      top: 79px;
+      height:218px;
+      transform: scale(1);
+  
+    }
+  }
+
+
+
+  .setup2-5{
+    position: absolute;
+    left: 100px;
+    top: 410px;
+    width: 76px;
+    height: 41px;
+    visibility:hidden;
+    cursor:pointer;
+  }
+  .setup2-6 {
+    width: 135px;
+      position: absolute;
+      left: 62px;
+      top: 325px;
+    visibility:hidden;
+  }
+
+  .setup2-7{
+    position: absolute;
+    left: 100px;
+    top: 410px;
+    width: 76px;
+    height: 41px;
+    visibility:hidden;
+    cursor:pointer;
+  }
+  .setup3-5 {
+    position: absolute;
+    /* left: 439px; */
+    /* top: 238px; */
+    left: 74px;
+    top: 391px;
+    width: 116px;
+    height: 139px;
+    visibility:hidden;
+  }
+  .setup3-7 {
+    position: absolute;
+      left: 67px;
+      top: 294px;
+    visibility:hidden;
+    width:123px
+  }
+  .setup6-12{
+    width: 2%;
+  height: 3%;
+    position: absolute;
+    left: 432px;
+  top: 197px;
+  visibility:hidden;
+  }
+  .setup6-14{
+    width: 2%;
+  height: 3%;
+    position: absolute;
+    left: 434px;
+  top: 253px;
+  visibility:hidden;
+  }
+  
+  .setup6-15{
+    width: 2%;
+  height: 3%;
+    position: absolute;
+  left: 529px;
+  top: 259px;
+  visibility:hidden;
+  }
+  
+  .setup6-16{
+    width: 2%;
+  height: 3%;
+    position: absolute;
+  left: 510px;
+  top: 238px;
+  visibility:hidden;
+  }
+  .setup6-13 {
+    width: 20%;
+  position: absolute;
+  left: 432px;
+  top: 163px;
+  visibility:hidden;
+  }
+  .setup3-5 {
+    position: absolute;
+    /* left: 439px; */
+    /* top: 238px; */
+    left: 74px;
+    top: 391px;
+    width: 116px;
+    height: 139px;
+    visibility:hidden;
+  }
+  .setup3-7 {
+    position: absolute;
+      left: 67px;
+      top: 294px;
+    visibility:hidden;
+    width:123px
+  }
+  @webkit-keyframes placeSealingGasket {
+    0% { left: 62px; top: 325px;}
+    25% { left: 62px; top: 75px;}
+    50% { left: 410px; top: 75px;}
+    100% {left: 410px; top: 243px;}
+  }
+  
+  @keyframes placeSealingGasket {
+    0% { left: 62px; top: 325px;}
+    25% { left: 62px; top: 75px;}
+    50% { left: 410px; top: 75px;}
+    100% {left: 410px; top: 243px;}
+  }
+  @webkit-keyframes placeFullMould_1 {
+    0% {  left: 67px; top: 294px;}
+    /* 47% { left: 67px; top: 54px;} */
+    100% {left: 406px; top: 31px;}
+  }
+  
+  @keyframes placeFullMould_1  {
+    0% {  left: 67px; top: 294px;}
+    /* 47% { left: 67px; top: 54px;} */
+    100% {left: 406px; top: 31px;}
+  }
+  @webkit-keyframes placeFullMould_2 {
+    0% {left: 432px; top: 54px;}
+    100% {left: 419px; top: 180px;}
+  }
+  
+  @keyframes placeFullMould_2  {
+    0% {left: 432px; top: 54px;}
+    100% {left: 419px; top: 180px;}
+  }
+  @webkit-keyframes placeTop {
+    0% { left: 62px; top: 325px;}
+    25% { left: 62px; top: 75px;}
+    50% { left: 410px; top: 75px;}
+    100% {left: 400px; top: 152px;}
+  }
+  
+  @keyframes placeTop {
+    0% { left: 62px; top: 325px;}
+    25% { left: 62px; top: 75px;}
+    50% { left: 410px; top: 75px;}
+    100% {left: 400px; top: 152px;}
+  }
+  @webkit-keyframes placeBolt {
+    0% {left: 432px; top: 216px;}
+    100% {left: 432px; top: 228px;}
+  }
+  
+  @keyframes placeBolt {
+    0% {left: 432px; top: 216px;}
+    100% {left: 432px; top: 228px;}
+  }
+  /* @webkit-keyframes tightenNut {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(2deg);}
+  }
+  
+  @keyframes tightenNut {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(2deg);}
+  } */
+  @-webkit-keyframes mvPlate
+{
+	from {left:320px; top:84px;}
+	to {left:204px; top:171px;}
+}
+
+@keyframes mvPlate
+{
+	from {left:320px; top:84px;}
+	to {left:204px; top:171px;}
+}
+.setup4-14{
+  width: 2%;
+height: 3%;
+  position: absolute;
+  left: 434px;
+top: 253px;
+visibility:hidden;
+}
+
+.setup4-15{
+  width: 2%;
+height: 3%;
+  position: absolute;
+left: 529px;
+top: 259px;
+visibility:hidden;
+}
+
+.setup4-16{
+  width: 2%;
+height: 3%;
+  position: absolute;
+left: 510px;
+top: 238px;
+visibility:hidden;
+}
+.setup5-10 {
+	position: absolute;
+	left: 100px;
+	top: 410px;
+	width: 76px;
+	height: 41px;
+	visibility:hidden;
+	cursor:pointer;
+}
+.setup5-11 {
+	width: 135px;
+    position: absolute;
+    left: 62px;
+    top: 325px;
+	visibility:hidden;
+}
+.correct {
+ color: #8af281; /* Green */
+}
+
+.wrong {
+  color: #f28181; /* Red */
+}
+#alerttxt{
+	visibility:hidden;
+}
+@keyframes lid_move
+{
+	from {left:232px; top:138px;}
+	to {left:232px; top:229px;}
+}
+@keyframes move_vernier
+{
+	from {left:329px; top:158px;}
+	to {left:312px; top:158px;}
+}
+
+.variables{
+	line-height:2;
+	font-size:14px;
+	position: absolute;
+	left: 111px;
+	top: 48px;
+}
+
+.variables-description{
+	/* Position the tooltip */
+	position: absolute;
+	left:10px;
+	visibility:hidden;
+	width: 300px;
+	background-color: black;
+	color: #fff;
+	border-radius: 6px;
+	padding: 20px 5px 10px 10px;
+	z-index: 100;
+}
+
+
+.variables:hover .variables-description {
+	visibility: visible;
+}
+/* Description popup */
+.popup
+{
+	border-radius:5px;
+	background-color:black;
+	color:white;
+	padding:5px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor:pointer;
+  /* visibility:hidden; */
+}
+
+.tooltip .tooltiptext {
+  left:102px;
+  visibility: hidden;
+  width: 550px;
+  background-color: black;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 10px 10px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 100;
+  line-height:1.5;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.description-tooltip
+{
+	border-bottom:1px dotted; 
+	color:red; 
+	position:absolute;
+	top:166px; 
+	left:5px;
+}
+
+.description-tooltiptext{
+	font-size:14px; 
+	text-align:justify;
+}
+
+.description-tooltiptext strong{
+	color:red;
+}
+
+.variable{
+	line-height:2;
+	font-size:14px;
+	position: absolute;
+	left:-117px;
+	top: 162px;
+}
+
+.variable-description{
+	/* Position the tooltip */
+	position: absolute;
+	left:10px;
+	visibility:hidden;
+	width: 300px;
+	background-color: black;
+	color: #fff;
+	border-radius: 6px;
+	padding: 20px 5px 10px 10px;
+	z-index: 100;
+}
+
+
+.variable:hover .variable-description {
+	visibility: visible;
+}
+
+.tooltips {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor:pointer;
+  /* visibility:hidden; */
+}
+.alert-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #333;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: verdana;
+  font-size: 14px;
+}
+.alert-box.show {
+  display: block;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}

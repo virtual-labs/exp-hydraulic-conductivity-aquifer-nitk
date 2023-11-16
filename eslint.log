@@ -1,0 +1,251 @@
+
+/home/runner/work/exp-hydraulic-conductivity-aquifer-nitk/exp-hydraulic-conductivity-aquifer-nitk/experiment/js/script.js
+     1:5   warning  'p' is assigned a value but never used                                                                                 no-unused-vars
+     3:5   warning  'test' is defined but never used                                                                                       no-unused-vars
+     4:5   warning  'flag' is assigned a value but never used                                                                              no-unused-vars
+     9:10  warning  'navNext' is defined but never used                                                                                    no-unused-vars
+    11:6   warning  'temp' is not defined                                                                                                  no-undef
+    11:13  warning  'temp' is not defined                                                                                                  no-undef
+    11:22  warning  'temp' is not defined                                                                                                  no-undef
+    13:36  warning  'temp' is not defined                                                                                                  no-undef
+    15:2   warning  'simsubscreennum' is not defined                                                                                       no-undef
+    16:35  warning  'simsubscreennum' is not defined                                                                                       no-undef
+    34:20  warning  'myInt' is not defined                                                                                                 no-undef
+    38:10  warning  'checkInputValid' is defined but never used                                                                            no-unused-vars
+    51:5   warning  'simsubscreennum' is not defined                                                                                       no-undef
+    74:4   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+    75:5   warning  'myInt' is not defined                                                                                                 no-undef
+    78:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+    80:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   103:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   122:5   warning  'myInt' is not defined                                                                                                 no-undef
+   144:7   warning  'myInt' is not defined                                                                                                 no-undef
+   163:9   warning  'myInt' is not defined                                                                                                 no-undef
+   178:11  warning  'myInt' is not defined                                                                                                 no-undef
+   219:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   233:4   warning  'myInt' is not defined                                                                                                 no-undef
+   236:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   238:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   275:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   292:3   warning  'myInt' is not defined                                                                                                 no-undef
+   306:5   warning  'myInt' is not defined                                                                                                 no-undef
+   320:7   warning  'myInt' is not defined                                                                                                 no-undef
+   352:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   359:5   warning  'myInt' is not defined                                                                                                 no-undef
+   381:7   warning  'myInt' is not defined                                                                                                 no-undef
+   400:9   warning  'myInt' is not defined                                                                                                 no-undef
+   415:11  warning  'myInt' is not defined                                                                                                 no-undef
+   454:10  warning  This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain  no-dupe-else-if
+   454:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   461:5   warning  'myInt' is not defined                                                                                                 no-undef
+   480:6   warning  'myInt' is not defined                                                                                                 no-undef
+   496:8   warning  'myInt' is not defined                                                                                                 no-undef
+   537:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   549:4   warning  'myInt' is not defined                                                                                                 no-undef
+   552:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   554:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   584:8   warning  'myInt' is not defined                                                                                                 no-undef
+   587:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   589:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   618:12  warning  'myInt' is not defined                                                                                                 no-undef
+   621:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   623:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   666:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   670:2   warning  'myInt' is not defined                                                                                                 no-undef
+   698:5   warning  'myInt' is not defined                                                                                                 no-undef
+   734:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   754:5   warning  'myInt' is not defined                                                                                                 no-undef
+   802:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   815:4   warning  'myInt' is not defined                                                                                                 no-undef
+   835:6   warning  'myInt' is not defined                                                                                                 no-undef
+   851:7   warning  'myInt' is not defined                                                                                                 no-undef
+   854:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   856:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   882:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   901:4   warning  'myInt' is not defined                                                                                                 no-undef
+   906:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   916:5   warning  'myInt' is not defined                                                                                                 no-undef
+   921:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   948:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   963:4   warning  'myInt' is not defined                                                                                                 no-undef
+   983:6   warning  'myInt' is not defined                                                                                                 no-undef
+   999:7   warning  'myInt' is not defined                                                                                                 no-undef
+  1002:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1004:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1032:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1060:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1085:4   warning  'myInt' is not defined                                                                                                 no-undef
+  1090:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1099:5   warning  'myInt' is not defined                                                                                                 no-undef
+  1104:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1124:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1139:4   warning  'myInt' is not defined                                                                                                 no-undef
+  1159:6   warning  'myInt' is not defined                                                                                                 no-undef
+  1174:7   warning  'myInt' is not defined                                                                                                 no-undef
+  1177:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1179:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1208:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1237:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1262:4   warning  'myInt' is not defined                                                                                                 no-undef
+  1267:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1276:5   warning  'myInt' is not defined                                                                                                 no-undef
+  1281:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1300:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1315:4   warning  'myInt' is not defined                                                                                                 no-undef
+  1335:6   warning  'myInt' is not defined                                                                                                 no-undef
+  1350:7   warning  'myInt' is not defined                                                                                                 no-undef
+  1353:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1355:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1384:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1414:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1432:4   warning  'myInt' is not defined                                                                                                 no-undef
+  1447:6   warning  'myInt' is not defined                                                                                                 no-undef
+  1473:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1510:10  warning  'ok' is defined but never used                                                                                         no-unused-vars
+  1517:10  warning  'ok2' is defined but never used                                                                                        no-unused-vars
+  1521:10  warning  'ok3' is defined but never used                                                                                        no-unused-vars
+  1534:10  warning  'ok4' is defined but never used                                                                                        no-unused-vars
+  1541:10  warning  'ok5' is defined but never used                                                                                        no-unused-vars
+  1572:10  warning  'ok7' is defined but never used                                                                                        no-unused-vars
+  1586:2   warning  'myInt' is not defined                                                                                                 no-undef
+  1630:3   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1653:2   warning  'myInt' is not defined                                                                                                 no-undef
+  1692:2   warning  'myInt' is not defined                                                                                                 no-undef
+  1742:2   warning  'myInt' is not defined                                                                                                 no-undef
+  1762:10  warning  'okay' is defined but never used                                                                                       no-unused-vars
+  1846:10  warning  'checkResults' is defined but never used                                                                               no-unused-vars
+  1891:10  warning  'checkResult' is defined but never used                                                                                no-unused-vars
+  1940:10  warning  'checkInput' is defined but never used                                                                                 no-unused-vars
+  1958:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1963:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1981:10  warning  'getResult1' is defined but never used                                                                                 no-unused-vars
+  2132:10  warning  'checkingInputs' is defined but never used                                                                             no-unused-vars
+  2138:13  warning  'anyInputEmpty' is assigned a value but never used                                                                     no-unused-vars
+  2181:10  warning  'gettingResult2' is defined but never used                                                                             no-unused-vars
+
+/home/runner/work/exp-hydraulic-conductivity-aquifer-nitk/exp-hydraulic-conductivity-aquifer-nitk/experiment/simulation/js/script.js
+     1:5   warning  'p' is assigned a value but never used                                                                                 no-unused-vars
+     3:5   warning  'test' is defined but never used                                                                                       no-unused-vars
+     4:5   warning  'flag' is assigned a value but never used                                                                              no-unused-vars
+     9:10  warning  'navNext' is defined but never used                                                                                    no-unused-vars
+    11:6   warning  'temp' is not defined                                                                                                  no-undef
+    11:13  warning  'temp' is not defined                                                                                                  no-undef
+    11:22  warning  'temp' is not defined                                                                                                  no-undef
+    13:36  warning  'temp' is not defined                                                                                                  no-undef
+    15:2   warning  'simsubscreennum' is not defined                                                                                       no-undef
+    16:35  warning  'simsubscreennum' is not defined                                                                                       no-undef
+    34:20  warning  'myInt' is not defined                                                                                                 no-undef
+    38:10  warning  'checkInputValid' is defined but never used                                                                            no-unused-vars
+    51:5   warning  'simsubscreennum' is not defined                                                                                       no-undef
+    74:4   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+    75:5   warning  'myInt' is not defined                                                                                                 no-undef
+    78:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+    80:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   103:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   122:5   warning  'myInt' is not defined                                                                                                 no-undef
+   144:7   warning  'myInt' is not defined                                                                                                 no-undef
+   163:9   warning  'myInt' is not defined                                                                                                 no-undef
+   178:11  warning  'myInt' is not defined                                                                                                 no-undef
+   219:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   233:4   warning  'myInt' is not defined                                                                                                 no-undef
+   236:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   238:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   275:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   292:3   warning  'myInt' is not defined                                                                                                 no-undef
+   306:5   warning  'myInt' is not defined                                                                                                 no-undef
+   320:7   warning  'myInt' is not defined                                                                                                 no-undef
+   352:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   359:5   warning  'myInt' is not defined                                                                                                 no-undef
+   381:7   warning  'myInt' is not defined                                                                                                 no-undef
+   400:9   warning  'myInt' is not defined                                                                                                 no-undef
+   415:11  warning  'myInt' is not defined                                                                                                 no-undef
+   454:10  warning  This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain  no-dupe-else-if
+   454:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   461:5   warning  'myInt' is not defined                                                                                                 no-undef
+   480:6   warning  'myInt' is not defined                                                                                                 no-undef
+   496:8   warning  'myInt' is not defined                                                                                                 no-undef
+   537:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   549:4   warning  'myInt' is not defined                                                                                                 no-undef
+   552:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   554:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   584:8   warning  'myInt' is not defined                                                                                                 no-undef
+   587:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   589:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   618:12  warning  'myInt' is not defined                                                                                                 no-undef
+   621:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   623:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   666:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   670:2   warning  'myInt' is not defined                                                                                                 no-undef
+   698:5   warning  'myInt' is not defined                                                                                                 no-undef
+   734:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   754:5   warning  'myInt' is not defined                                                                                                 no-undef
+   802:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   815:4   warning  'myInt' is not defined                                                                                                 no-undef
+   835:6   warning  'myInt' is not defined                                                                                                 no-undef
+   851:7   warning  'myInt' is not defined                                                                                                 no-undef
+   854:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   856:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   882:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   901:4   warning  'myInt' is not defined                                                                                                 no-undef
+   906:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   916:5   warning  'myInt' is not defined                                                                                                 no-undef
+   921:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   948:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+   963:4   warning  'myInt' is not defined                                                                                                 no-undef
+   983:6   warning  'myInt' is not defined                                                                                                 no-undef
+   999:7   warning  'myInt' is not defined                                                                                                 no-undef
+  1002:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1004:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1032:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1060:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1085:4   warning  'myInt' is not defined                                                                                                 no-undef
+  1090:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1099:5   warning  'myInt' is not defined                                                                                                 no-undef
+  1104:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1124:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1139:4   warning  'myInt' is not defined                                                                                                 no-undef
+  1159:6   warning  'myInt' is not defined                                                                                                 no-undef
+  1174:7   warning  'myInt' is not defined                                                                                                 no-undef
+  1177:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1179:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1208:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1237:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1262:4   warning  'myInt' is not defined                                                                                                 no-undef
+  1267:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1276:5   warning  'myInt' is not defined                                                                                                 no-undef
+  1281:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1300:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1315:4   warning  'myInt' is not defined                                                                                                 no-undef
+  1335:6   warning  'myInt' is not defined                                                                                                 no-undef
+  1350:7   warning  'myInt' is not defined                                                                                                 no-undef
+  1353:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1355:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1384:11  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1414:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1432:4   warning  'myInt' is not defined                                                                                                 no-undef
+  1447:6   warning  'myInt' is not defined                                                                                                 no-undef
+  1473:10  warning  'simsubscreennum' is not defined                                                                                       no-undef
+  1510:10  warning  'ok' is defined but never used                                                                                         no-unused-vars
+  1517:10  warning  'ok2' is defined but never used                                                                                        no-unused-vars
+  1521:10  warning  'ok3' is defined but never used                                                                                        no-unused-vars
+  1534:10  warning  'ok4' is defined but never used                                                                                        no-unused-vars
+  1541:10  warning  'ok5' is defined but never used                                                                                        no-unused-vars
+  1572:10  warning  'ok7' is defined but never used                                                                                        no-unused-vars
+  1586:2   warning  'myInt' is not defined                                                                                                 no-undef
+  1630:3   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1653:2   warning  'myInt' is not defined                                                                                                 no-undef
+  1692:2   warning  'myInt' is not defined                                                                                                 no-undef
+  1742:2   warning  'myInt' is not defined                                                                                                 no-undef
+  1762:10  warning  'okay' is defined but never used                                                                                       no-unused-vars
+  1846:10  warning  'checkResults' is defined but never used                                                                               no-unused-vars
+  1891:10  warning  'checkResult' is defined but never used                                                                                no-unused-vars
+  1940:10  warning  'checkInput' is defined but never used                                                                                 no-unused-vars
+  1958:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1963:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  1981:10  warning  'getResult1' is defined but never used                                                                                 no-unused-vars
+  2132:10  warning  'checkingInputs' is defined but never used                                                                             no-unused-vars
+  2138:13  warning  'anyInputEmpty' is assigned a value but never used                                                                     no-unused-vars
+  2181:10  warning  'gettingResult2' is defined but never used                                                                             no-unused-vars
+
+✖ 244 problems (0 errors, 244 warnings)
+
