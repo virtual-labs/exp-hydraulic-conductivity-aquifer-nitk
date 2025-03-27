@@ -1,1 +1,1 @@
-## Determination of hydraulic conductivity of the aquifer using constant head
+## DETERMINATION OF COEFFICIENT OF PERMEABILITY BY CONSTANT HEAD PERMEABILITY TEST
