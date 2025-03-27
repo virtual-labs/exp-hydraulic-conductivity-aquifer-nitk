@@ -12,9 +12,9 @@
     <td>Developer : Dr. Pruthviraj U | NITK</br></br>
     Contributors :
     <ul style="list-style-type: none;">
-      <li>Siya Sushil | NITK</li>
+      <li>Anusha B Salian | NITK</li>
       <li>Ashika Pai | NITK</li>
-      <li>Dr. Vyshali | NITK</li>
+      <li>Mahima N | NITK</li>
     </ul></td>
   </tr>
 </table>
