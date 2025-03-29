@@ -2,7 +2,7 @@
 
 <div style=" font-style:verdana;">
 
-### Darcy's Law:
+#### Darcy's Law:
 
 Darcy showed experimentally that the rate of flow of water flowing through a soil medium of unit cross sectional area is directly proportional to the imposed hydraulic gradient.
 
@@ -40,7 +40,7 @@ In this experiment, a constant head of water is maintained in the overhead tank 
 
 In this experiment, a stand pipe is connected to the permeameter which supplies the water. This experiment is usually carried out for fine grained soils or cohesive soils where the permeability of water is very low.
 
-### Constant Head Permeability
+#### Constant Head Permeability:
 
 Constant head permeability test is a common laboratory testing method to find out the permeability of granular soils like sand and gravel with little or no silt content.
 In this method the hydraulic gradient is kept constant by keeping the head of water in the overhead tank as constant at all times.
