@@ -15,7 +15,6 @@
       <li>Siya Sushil</li>
       <li>Dr. Vyshali | NITK</li>
       <li>Ashika Pai | NITK</li>
-      <li>Anusha B Salian | NITK</li>
     </ul></td>
   </tr>
 </table>
