@@ -1,61 +1,64 @@
-### Theory :
-
-<div style=" font-style:verdana;">
+### INTRODUCTION
 
 #### Darcy's Law:
 
-Darcy showed experimentally that the rate of flow of water flowing through a soil medium of unit cross sectional area is directly proportional to the imposed hydraulic gradient.
+<p style="text-indent:50px; text-align: justify;">Darcy experimentally demonstrated that the rate of flow of water through a soil medium of unit cross-sectional area is directly proportional to the applied hydraulic gradient.</p>
 
-q = Rate of flow of water  
-A = Cross sectional area of soil  
-i = Hydraulic gradient
-
-Therefore, the rate of flow of water divided by cross sectional area is directly proportional to hydraulic gradient.
+<p style="text-align: justify;">The rate of flow of water per unit cross-sectional area is directly proportional to the hydraulic gradient.</p>
 
 <center>
  <img src="images/eq1.png"/>
 </center>
 
-To take out the proportionality from the equation, a constant is inserted into the equation which is called ‘Darcy’s coefficient of permeability’ or ‘coefficient of permeability’ or 'permeability'.
+Where,</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;q = Rate of flow of water, </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A = Cross sectional area of soil, </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i = Hydraulic gradient
 
-  <center>q = kiA</center>
+<p style="text-indent:50px; text-align: justify;">To eliminate the proportionality in the equation, a constant is introduced, known as Darcy's coefficient of permeability (k), also referred to as the coefficient of permeability or permeability.</p>
 
-Therefore permeability can be defined as the property of soil which indicates the ease through which the water will flow / percolate through the continuously linked pore spaces of the soil.
+<center>q = kiA</center>
 
-Permeability can also be defined as the ratio between rate of flow of water to that of the product of cross sectional area and hydraulic gradient.
+<p style="text-indent:50px; text-align: justify;">Therefore, Permeability may be defined as the property of soil that indicates the ease with which water flows or percolates through the continuously interconnected pore spaces within the soil.</p>
+
+<p style="text-indent:50px; text-align: justify;">
+Permeability may also be defined as the ratio of the rate of flow of water to the product of the cross-sectional area and the hydraulic gradient.</p>
 
   <center>
  <img src="images/eq2.png"/>
 </center>
 
-The major factors on which permeability depends are the grain size of the soil particles, the properties of the pore fluid, the void ratio of soil, the shapes and arrangement of pores and the degree of saturation.
+<p style="text-indent:50px; text-align: justify;">
+The permeability of soil depends on several major factors, including the grain size of soil particles, the properties of the pore fluid, the void ratio of the soil, the shape and arrangement of the pore spaces, and the degree of saturation.</p>
 
-In laboratory, permeability of soil is found by any of the following two experiments:
+<p style="text-align: justify;">In the laboratory, the permeability of soil is determined using either of the following two experiments:</p>
 
-1. Constant head permeability
+1. Constant head permeability:
 
-In this experiment, a constant head of water is maintained in the overhead tank so that the pressure of water remains constant at all times. This experiment is usually carried out for coarse grained soils where the permeability of the soils are higher.
+<p style="text-indent:50px; text-align: justify;">In this experiment, a constant head of water is maintained in the overhead tank so that the water pressure remains constant throughout the test. This method is generally used for coarse-grained soils, where the permeability is relatively high.</p>
 
-2. Variable head permeability
+2. Variable head permeability:
 
-In this experiment, a stand pipe is connected to the permeameter which supplies the water. This experiment is usually carried out for fine grained soils or cohesive soils where the permeability of water is very low.
+<p style="text-indent:50px; text-align: justify;">In this experiment, a standpipe is connected to the permeameter to supply water. This method is generally used for fine-grained or cohesive soils, where the permeability is very low.</p>
 
 #### Constant Head Permeability:
 
-Constant head permeability test is a common laboratory testing method to find out the permeability of granular soils like sand and gravel with little or no silt content.
-In this method the hydraulic gradient is kept constant by keeping the head of water in the overhead tank as constant at all times.
+<p style="text-indent:50px; text-align: justify;">The constant head permeability test is a commonly used laboratory method for determining the permeability of granular soils such as sand and gravel, which contain little or no silt.</p>
 
-Formula to calculate permeability in constant head permeability test.
+<p style="text-indent:50px; text-align: justify;">In this method, the hydraulic gradient is maintained constant by keeping the water head in the overhead tank constant throughout the experiment.</p>
+
+<p style="text-align: justify;">The permeability in the constant head permeability test is calculated using the following formula:</p>
 
 <center>
  <img src="images/eq3.png"/>
 </center>
 
-k = Coefficient of permeability  
-Q = Total quantity of water collected in time t  
-L = Length of the sample  
-t = Duration of water collected  
-h = Constant head of water
+Where,</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k = Coefficient of permeability,  </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q = Total quantity of water collected in time t,  </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L = Length of the soil sample, </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t = Duration of water collected,  </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h = Constant head of water
 
 <center>
 
